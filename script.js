@@ -6,11 +6,11 @@ const familyData = {
     relationship: "Patriarch",
     roleGroup: "parent",
     generation: 1,
-    dates: "b. 1960",
-    birthPlace: "Tarlac, Philippines",
-    occupation: "Agricultural Consultant & Farmer",
-    tagline: "The soil yields to those who treat it with patience and respect.",
-    bio: "Rolando is the patriarch of the Dancel family. An agronomy consultant dedicated to sustainable farming and community development.",
+    dates: "Nov 17, 1962",
+    birthPlace: "Balut Tondo, Manila, Philippines",
+    occupation: "Tricycle Driver",
+    tagline: "Mamatay kung mamatay",
+    bio: "Rolando is very hardworking and has been the backbone of the family, ensuring that all his children have access to education and opportunities.",
     image: "assets/rolando.jpg",
     spouse: "juvilyn",
     parents: [],
@@ -26,11 +26,11 @@ const familyData = {
     relationship: "Matriarch",
     roleGroup: "parent",
     generation: 1,
-    dates: "b. 1963",
-    birthPlace: "Pangasinan, Philippines",
-    occupation: "High School Educator",
+    dates: "Dec 25, 1966",
+    birthPlace: "Ilo-ilo City, Philippines",
+    occupation: "House Wife",
     tagline: "Education is the greatest heritage we can give to our children.",
-    bio: "Juvilyn is a dedicated educator and organizer who keeps the large family connected.",
+    bio: "Juvilyn is very loving and hardworking mother who keeps the large family connected.",
     image: null,
     spouse: "rolando",
     parents: [],
@@ -46,16 +46,19 @@ const familyData = {
     relationship: "Eldest Son",
     roleGroup: "sibling",
     generation: 2,
-    dates: "b. 1980",
-    birthPlace: "Tarlac, Philippines",
-    occupation: "Senior Software Architect",
-    tagline: "Clean code and strong connections make complex systems work.",
+    dates: "Oct 3, 1984",
+    birthPlace: "Victorina, Lolomboy, Bulacan, Philippines",
+    occupation: "Bike Technnician",
+    tagline: "Hard work pays off, but family is the real reward.",
     bio: "Manuelito builds software and keeps the family's digital archives running.",
     image: null,
-    spouse: null,
+    spouse: "jonna",
     parents: ["rolando", "juvilyn"],
-    children: [],
-    gallery: []
+    children: ["alexandra", "altheo"],
+    gallery: [
+      { title: "Bike Maintenance Workshop", date: "2019", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=600" },
+      { title: "Family Tech Setup Project", date: "2021", image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600" }
+    ]
   },
   "mary_jane": {
     id: "mary_jane",
@@ -63,14 +66,51 @@ const familyData = {
     relationship: "Eldest Daughter",
     roleGroup: "sibling",
     generation: 2,
-    dates: "b. 1982",
-    birthPlace: "Tarlac, Philippines",
+    dates: "Dec 4, 1985",
+    birthPlace: "Victorina Lolomboy, Bulacan, Philippines",
     occupation: "Head Pediatric Nurse",
     tagline: "Care is about treating the person, not just the symptom.",
     bio: "Mary Jane leads pediatric care and supports family health initiatives.",
     image: null,
-    spouse: null,
+    spouse: "rommel",
     parents: ["rolando", "juvilyn"],
+    children: ["loloy"],
+    gallery: [
+      { title: "Pediatric Care Excellence Award", date: "2018", image: "https://images.unsplash.com/photo-1576091160550-112173f7f869?q=80&w=600" },
+      { title: "Family Health Wellness Initiative", date: "2022", image: "https://images.unsplash.com/photo-1631217314830-d13cf78d3cc0?q=80&w=600" }
+    ]
+  },
+  "rommel": {
+    id: "rommel",
+    name: "Rommel Bajaro",
+    relationship: "Spouse",
+    roleGroup: "spouse",
+    generation: 2,
+    dates: "",
+    birthPlace: "",
+    occupation: "",
+    tagline: "",
+    bio: "Rommel is the caring husband of Mary Jane Dancel.",
+    image: null,
+    spouse: "mary_jane",
+    parents: [],
+    children: ["loloy"],
+    gallery: []
+  },
+  "loloy": {
+    id: "loloy",
+    name: "Loloy",
+    relationship: "Pet Dog",
+    roleGroup: "pet",
+    generation: 3,
+    dates: "",
+    birthPlace: "",
+    occupation: "Family Companion",
+    tagline: "A beloved furry member of the Dancel-Bajaro family.",
+    bio: "Loloy is the cherished family dog who brings joy and companionship to Mary Jane and Rommel's home.",
+    image: null,
+    spouse: null,
+    parents: ["mary_jane", "rommel"],
     children: [],
     gallery: []
   },
@@ -80,8 +120,8 @@ const familyData = {
     relationship: "Second Daughter",
     roleGroup: "sibling",
     generation: 2,
-    dates: "b. 1984",
-    birthPlace: "Tarlac, Philippines",
+    dates: "March 9, 1988",
+    birthPlace: "Lolomboy, Bulacan, Philippines",
     occupation: "Operations Manager",
     tagline: "Efficiency is doing things right; effectiveness is doing the right things.",
     bio: "Mary Joy manages logistics for an international retail brand.",
@@ -89,7 +129,10 @@ const familyData = {
     spouse: null,
     parents: ["rolando", "juvilyn"],
     children: [],
-    gallery: []
+    gallery: [
+      { title: "Supply Chain Optimization Project", date: "2020", image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?q=80&w=600" },
+      { title: "Logistics Team Recognition", date: "2023", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600" }
+    ]
   },
   "mary_grace": {
     id: "mary_grace",
@@ -97,8 +140,8 @@ const familyData = {
     relationship: "Third Daughter",
     roleGroup: "sibling",
     generation: 2,
-    dates: "b. 1986",
-    birthPlace: "Tarlac, Philippines",
+    dates: "Dec 10, 1990",
+    birthPlace: "Banlok Lolomboy, Bulacan, Philippines",
     occupation: "Certified Public Accountant",
     tagline: "Numbers speak truth if you listen with precision.",
     bio: "Mary Grace works in finance and helps manage family finances for reunions.",
@@ -106,7 +149,10 @@ const familyData = {
     spouse: null,
     parents: ["rolando", "juvilyn"],
     children: [],
-    gallery: []
+    gallery: [
+      { title: "Financial Planning Seminar", date: "2019", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600" },
+      { title: "Family Reunion Budget Management", date: "2022", image: "https://images.unsplash.com/photo-1579621970563-430f63602566?q=80&w=600" }
+    ]
   },
   "r_jay": {
     id: "r_jay",
@@ -114,8 +160,8 @@ const familyData = {
     relationship: "Second Son",
     roleGroup: "sibling",
     generation: 2,
-    dates: "b. 1991",
-    birthPlace: "Tarlac, Philippines",
+    dates: "May 25, 1993",
+    birthPlace: "Banlok Lolomboy, Bulacan, Philippines",
     occupation: "Lead UI/UX Designer",
     tagline: "Design is not just what it looks like, but how it works.",
     bio: "R-Jay is a creative lead in digital product design.",
@@ -123,7 +169,10 @@ const familyData = {
     spouse: null,
     parents: ["rolando", "juvilyn"],
     children: [],
-    gallery: []
+    gallery: [
+      { title: "Digital Product Design Showcase", date: "2021", image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=600" },
+      { title: "UI/UX Design Awards", date: "2023", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a5?q=80&w=600" }
+    ]
   },
   "cherry_anne": {
     id: "cherry_anne",
@@ -131,8 +180,8 @@ const familyData = {
     relationship: "Fourth Daughter",
     roleGroup: "sibling",
     generation: 2,
-    dates: "b. 1993",
-    birthPlace: "Tarlac, Philippines",
+    dates: "July 18, 1994",
+    birthPlace: "Banlok Lolomboy, Bulacan, Philippines",
     occupation: "Clinical Pharmacist",
     tagline: "Science combined with care yields the best remedies.",
     bio: "Cherry Anne works in clinical research evaluating drug interactions.",
@@ -140,7 +189,10 @@ const familyData = {
     spouse: null,
     parents: ["rolando", "juvilyn"],
     children: [],
-    gallery: []
+    gallery: [
+      { title: "Clinical Research Presentation", date: "2020", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600" },
+      { title: "Pharmacy Innovation Project", date: "2022", image: "https://images.unsplash.com/photo-1585461231042-528ee7d0d75b?q=80&w=600" }
+    ]
   },
   "rolando_jr": {
     id: "rolando_jr",
@@ -148,8 +200,8 @@ const familyData = {
     relationship: "Third Son / Namesake",
     roleGroup: "sibling",
     generation: 2,
-    dates: "b. 1995",
-    birthPlace: "Tarlac, Philippines",
+    dates: "July 6, 1997",
+    birthPlace: "Abangan Sur Marilao, Bulacan, Philippines",
     occupation: "Civil Engineer",
     tagline: "We build structures that stand the test of time and weather.",
     bio: "Rolando Jr. is a civil engineer working on infrastructure projects.",
@@ -157,7 +209,10 @@ const familyData = {
     spouse: null,
     parents: ["rolando", "juvilyn"],
     children: [],
-    gallery: []
+    gallery: [
+      { title: "Infrastructure Development Project", date: "2019", image: "https://images.unsplash.com/photo-1581092162562-40038f60aa14?q=80&w=600" },
+      { title: "Bridge Construction Achievement", date: "2023", image: "https://images.unsplash.com/photo-1581092162562-40038f60aa14?q=80&w=600" }
+    ]
   },
   "olivia": {
     id: "olivia",
@@ -165,8 +220,8 @@ const familyData = {
     relationship: "Fifth Daughter",
     roleGroup: "sibling",
     generation: 2,
-    dates: "b. 1997",
-    birthPlace: "Tarlac, Philippines",
+    dates: "Feb 9, 1999",
+    birthPlace: "Abangan Sur Marilao, Bulaca, Philippines",
     occupation: "Copywriter & Journalist",
     tagline: "Words are lenses that bring the truths of human nature into focus.",
     bio: "Olivia writes about culture and food history.",
@@ -174,7 +229,10 @@ const familyData = {
     spouse: null,
     parents: ["rolando", "juvilyn"],
     children: [],
-    gallery: []
+    gallery: [
+      { title: "Published Articles Collection", date: "2021", image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=600" },
+      { title: "Food Culture Documentary Feature", date: "2023", image: "https://images.unsplash.com/photo-1504674900612-b3a27d06cd87?q=80&w=600" }
+    ]
   },
   "troy_lits": {
     id: "troy_lits",
@@ -182,16 +240,19 @@ const familyData = {
     relationship: "Fourth Son",
     roleGroup: "sibling",
     generation: 2,
-    dates: "b. 1999",
-    birthPlace: "Tarlac, Philippines",
-    occupation: "Environmental Scientist",
-    tagline: "To preserve our ecosystems is to protect our future.",
-    bio: "Troy Lits researches soil quality and watershed preservation.",
-    image: null,
+    dates: "August 22, 2004",
+    birthPlace: "Igulot, Bocaue, Bulacan, Philippines",
+    occupation: "Bachelor of Science in Information Technology Student",
+    tagline: "Building tomorrow's solutions, one line of code at a time.",
+    bio: "Troy Lits bridging the gap between complex data and elegant solutions.",
+    image: "1x1ko.jpg",
     spouse: null,
     parents: ["rolando", "juvilyn"],
     children: [],
-    gallery: []
+    gallery: [
+      { title: "My 1x1 picture hehe", date: "2022", image: "1x1ko.jpg" },
+      { title: "Coding Project Portfolio", date: "2024", image: "https://images.unsplash.com/photo-1517694712642-f529300b5a3f?q=80&w=600" }
+    ]
   },
   "angelyn": {
     id: "angelyn",
@@ -199,14 +260,68 @@ const familyData = {
     relationship: "Youngest Daughter",
     roleGroup: "sibling",
     generation: 2,
-    dates: "b. 2002",
-    birthPlace: "Tarlac, Philippines",
-    occupation: "Architecture Student",
-    tagline: "Design is where science, engineering, and fine arts intersect.",
-    bio: "Angelyn is studying architecture and focuses on eco-friendly design.",
-    image: null,
+    dates: "June 8, 2007",
+    birthPlace: "Northville 5, Batia, Bocaue, Bulacan, Philippines",
+    occupation: "Tourism Management Student",
+    tagline: "Connecting cultures, crafting unforgettable journeys.",
+    bio: "Angelyn is dedicated to sustainable hospitality, destination branding, and seamless guest relations.",
+    image: "ang.jpe",
     spouse: null,
     parents: ["rolando", "juvilyn"],
+    children: [],
+    gallery: [
+      { title: "Tourism Program Capstone Project", date: "2023", image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=600" },
+      { title: "Hospitality Management Studies", date: "2024", image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600" }
+    ]
+  },
+  "jonna": {
+    id: "jonna",
+    name: "Jonna Francisco Dancel",
+    relationship: "Spouse",
+    roleGroup: "spouse",
+    generation: 2,
+    dates: "",
+    birthPlace: "",
+    occupation: "",
+    tagline: "",
+    bio: "",
+    image: null,
+    spouse: "manuelito",
+    parents: [],
+    children: ["alexandra", "altheo"],
+    gallery: []
+  },
+  "alexandra": {
+    id: "alexandra",
+    name: "Alexandra Louise Dancel",
+    relationship: "First Daughter",
+    roleGroup: "child",
+    generation: 3,
+    dates: "",
+    birthPlace: "",
+    occupation: "",
+    tagline: "",
+    bio: "",
+    image: null,
+    spouse: null,
+    parents: ["manuelito", "jonna"],
+    children: [],
+    gallery: []
+  },
+  "altheo": {
+    id: "altheo",
+    name: "Altheo Lucas Dancel",
+    relationship: "Youngest Son",
+    roleGroup: "child",
+    generation: 3,
+    dates: "",
+    birthPlace: "",
+    occupation: "",
+    tagline: "",
+    bio: "",
+    image: null,
+    spouse: null,
+    parents: ["manuelito", "jonna"],
     children: [],
     gallery: []
   }
@@ -447,7 +562,7 @@ function initProfilePage() {
         if (familyData[pId]) {
           relationalMembers.push({
             member: familyData[pId],
-            relationLabel: familyData[pId].relationship.includes("Father") ? "Father" : "Mother"
+            relationLabel: familyData[pId].relationship.includes("Patriarch") || familyData[pId].relationship.includes("Father") ? "Father" : "Mother"
           });
         }
       });
@@ -463,7 +578,7 @@ function initProfilePage() {
               checkedSiblings.add(cId);
               relationalMembers.push({
                 member: familyData[cId],
-                relationLabel: familyData[cId].relationship.toLowerCase().includes("sister") ? "Sister" : "Brother"
+                relationLabel: familyData[cId].relationship.toLowerCase().includes("daughter") || familyData[cId].relationship.toLowerCase().includes("sister") ? "Sister" : "Brother"
               });
             }
           });
@@ -551,4 +666,33 @@ document.addEventListener('DOMContentLoaded', () => {
   } else if (document.getElementById('profile-layout') || document.getElementById('error-container')) {
     initProfilePage();
   }
+  
+  // Initialize theme toggle
+  initThemeToggle();
 });
+
+// Theme Toggle Functionality
+function initThemeToggle() {
+  const toggleBtn = document.getElementById('theme-toggle');
+  if (!toggleBtn) return;
+  
+  // Load saved theme or default to 'light'
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  setTheme(savedTheme);
+  
+  // Toggle theme on button click
+  toggleBtn.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
+}
+
+function setTheme(theme) {
+  if (theme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+  }
+}

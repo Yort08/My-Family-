@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dancel Family Archive — Home</title>
+  <meta name="description" content="Welcome to the Dancel Family Archive. Explore our rich heritage, genealogical lineage, and family stories.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Home Page Specific Styles */
+    .home-hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, rgba(20, 61, 42, 0.05) 0%, rgba(197, 155, 39, 0.05) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      z-index: 2;
+    }
+
+    .hero-content h1 {
+      font-size: 4rem;
+      color: var(--color-accent-emerald);
+      margin-bottom: 1rem;
+      line-height: 1.1;
+      font-family: var(--font-serif-header);
+    }
+
+    .hero-subtitle {
+      font-size: 1.35rem;
+      color: var(--color-text-muted);
+      margin-bottom: 2rem;
+      font-style: italic;
+      font-family: var(--font-serif-body);
+    }
+
+    .hero-description {
+      font-size: 1.05rem;
+      color: var(--color-text-main);
+      line-height: 1.8;
+      margin-bottom: 3rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      background-color: var(--color-accent-emerald);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-md);
+      border: 2px solid var(--color-accent-emerald);
+    }
+
+    .cta-button:hover {
+      background-color: transparent;
+      color: var(--color-accent-emerald);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .features-section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      color: var(--color-accent-emerald);
+      text-align: center;
+      margin-bottom: 3rem;
+      font-family: var(--font-serif-header);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .feature-card {
+      background-color: var(--color-bg-card);
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid var(--color-border);
+      text-align: center;
+      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--color-accent-gold);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1.35rem;
+      color: var(--color-accent-emerald);
+      margin-bottom: 1rem;
+      font-family: var(--font-serif-header);
+    }
+
+    .feature-card p {
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    .family-stats {
+      background-color: var(--color-bg-card);
+      padding: 3rem 2rem;
+      border-radius: 12px;
+      border: 1px solid var(--color-border);
+      margin: 3rem 0;
+      box-shadow: var(--shadow-md);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-item h4 {
+      font-size: 2.5rem;
+      color: var(--color-accent-gold);
+      margin-bottom: 0.5rem;
+      font-family: var(--font-serif-header);
+    }
+
+    .stat-item p {
+      color: var(--color-text-muted);
+      font-size: 1.05rem;
+    }
+
+    .about-section {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      background-color: var(--color-bg-card);
+      padding: 3rem;
+      border-radius: 12px;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-md);
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      color: var(--color-accent-emerald);
+      margin-bottom: 1.5rem;
+      font-family: var(--font-serif-header);
+    }
+
+    .about-section p {
+      color: var(--color-text-main);
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+    }
+
+    .cta-container {
+      text-align: center;
+      margin: 4rem 0;
+    }
+
+    footer {
+      background-color: var(--color-bg-card);
+      border-top: 1px solid var(--color-border);
+      padding: 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .footer-heart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      color: var(--color-text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-heart svg {
+      width: 20px;
+      height: 20px;
+      color: var(--color-accent-burgundy);
+    }
+
+    footer p {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.15rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Dark Mode">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M21.64 15.95c-.18-.87-.46-1.69-.82-2.47.54-.5 1.25-1.3 1.25-2.12 0-.88-.75-1.6-1.63-1.6-.07 0-.15 0-.22.01C19.27 7.2 17.66 5.02 15.5 5c-1.4 0-2.74.5-3.8 1.3-.75-.23-1.54-.35-2.35-.35-5.31 0-9.65 4.26-9.65 9.5s4.34 9.5 9.65 9.5c.3 0 .59-.01.88-.04 1.06.68 2.36 1.08 3.7 1.08 1.45 0 2.8-.48 3.77-1.3l.5.5c.75.75 2.07.75 2.82 0 .75-.75.75-2.07 0-2.82l-.5-.5.02-.82c.14-1.14.2-2.3.2-3.46.53-1.69.82-3.46.82-5.3 0-2.84-1.22-5.39-3.15-7.15z"/>
+    </svg>
+  </button>
+  <!-- Hero Section -->
+  <section class="home-hero">
+    <div class="hero-content">
+      <h1>The Dancel Family Archive</h1>
+      <p class="hero-subtitle">A digital tapestry of our heritage, stories, and lineage</p>
+      <p class="hero-description">
+        Welcome to our family's interactive genealogical experience. Explore the rich history, 
+        biographical narratives, and cherished memories of the Dancel family across generations.
+      </p>
+      <a href="index.html" class="cta-button">Explore Family Tree</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <h2 class="section-title">What You'll Discover</h2>
+    <div class="features-grid">
+      <a href="index.html" class="feature-card feature-link">
+        <div class="feature-icon">🌳</div>
+        <h3>Interactive Tree</h3>
+        <p>Navigate through our beautifully designed family tree with curved connections showing relationships across generations.</p>
+      </a>
+      <a href="index.html" class="feature-card feature-link">
+        <div class="feature-icon">👥</div>
+        <h3>Member Profiles</h3>
+        <p>Discover detailed profiles of each family member including their accomplishments, occupations, and life stories.</p>
+      </a>
+      <a href="index.html" class="feature-card feature-link">
+        <div class="feature-icon">📸</div>
+        <h3>Memory Gallery</h3>
+        <p>Browse through cherished photographs and archival memories that capture important moments in our family's history.</p>
+      </a>
+      <a href="index.html" class="feature-card feature-link">
+        <div class="feature-icon">📅</div>
+        <h3>Genealogical Data</h3>
+        <p>Access comprehensive information including birthdates, birthplaces, and relationships connecting all family members.</p>
+      </a>
+      <a href="index.html" class="feature-card feature-link">
+        <div class="feature-icon">🔍</div>
+        <h3>Smart Search</h3>
+        <p>Quickly find family members by name, occupation, birth year, or filter by generation in the family tree.</p>
+      </a>
+      <a href="index.html" class="feature-card feature-link">
+        <div class="feature-icon">💝</div>
+        <h3>Heritage Preserved</h3>
+        <p>Preserve our family's legacy for future generations with stories, achievements, and connections documented here.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Family Stats -->
+  <section class="features-section">
+    <div class="family-stats">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h4>2</h4>
+          <p>Generations Documented</p>
+        </div>
+        <div class="stat-item">
+          <h4>12+</h4>
+          <p>Family Members</p>
+        </div>
+        <div class="stat-item">
+          <h4>Philippines</h4>
+          <p>Family Heritage</p>
+        </div>
+        <div class="stat-item">
+          <h4>∞</h4>
+          <p>Stories & Memories</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>About The Dancel Family</h2>
+    <p>
+      The Dancel family is rooted in the Philippines, with strong values of education, innovation, and family unity. 
+      Led by patriarch Rolando D. Dancel and matriarch Juvilyn D. Dancel, our family comprises talented individuals 
+      spanning various professions—from healthcare and technology to civil engineering and education.
+    </p>
+    <p>
+      This digital archive was created to preserve our family's story for generations to come. It serves as a 
+      testament to our shared heritage and celebrates the achievements and connections that bind us together.
+    </p>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-container">
+    <h2 class="section-title">Ready to Explore?</h2>
+    <a href="index.html" class="cta-button">View Full Family Tree</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-heart">
+      Made with 
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+      </svg>
+      by the Dancel Descendants
+    </p>
+    <p>&copy; 2026 The Dancel Family Archive. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for navigation
+    document.querySelectorAll('a[href="index.html"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        document.body.style.opacity = 0;
+        document.body.style.transition = 'opacity 0.3s ease';
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 300);
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

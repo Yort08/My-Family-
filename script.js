@@ -11,13 +11,16 @@ const familyData = {
     occupation: "Tricycle Driver",
     tagline: "Mamatay kung mamatay",
     bio: "Rolando is very hardworking and has been the backbone of the family, ensuring that all his children have access to education and opportunities.",
-    image: "assets/rolando.jpg",
+    image: "photos/Rolando.jpe",
     spouse: "juvilyn",
     parents: [],
     children: ["manuelito", "mary_jane", "mary_joy", "mary_grace", "r_jay", "cherry_anne", "rolando_jr", "olivia", "troy_lits", "angelyn"],
     gallery: [
-      { title: "Rolando's Farm Journal", date: "2008", image: "https://images.unsplash.com/photo-1464226184884-fa280b87c3a9?q=80&w=600" },
-      { title: "Agricultural Consulting Fieldwork", date: "1994", image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=600" }
+      { title: "Signature Chin-Pose at Dinner", date: "Dinner Gathering", image: "papa_photos/b538d9f2-4a98-4fa0-bd9f-24ff9fe8bd5c.jpe" },
+      { title: "Sweet Moments with Grandchild", date: "Family Time", image: "papa_photos/29378b7f-d7df-4661-9491-7f6a7068a352.jpe" },
+      { title: "Family Restaurant Outing", date: "Dinner Gathering", image: "papa_photos/37142029-bfd8-4def-bf4f-4c128e75c71f.jpe" },
+      { title: "The Dancel Family Selfie", date: "Home Gathering", image: "papa_photos/e61131a9-c874-4fce-8b3f-780211de1e40.jpe" },
+      { title: "Relaxed Selfie at Home", date: "Selfie", image: "papa_photos/e70fe8ea-4502-4ec1-9cb2-fb559a816a40.jpe" }
     ]
   },
   "juvilyn": {
@@ -31,13 +34,30 @@ const familyData = {
     occupation: "House Wife",
     tagline: "Education is the greatest heritage we can give to our children.",
     bio: "Juvilyn is very loving and hardworking mother who keeps the large family connected.",
-    image: null,
+    image: "photos/Juvilyn Dancel.jpe",
     spouse: "rolando",
     parents: [],
     children: ["manuelito", "mary_jane", "mary_joy", "mary_grace", "r_jay", "cherry_anne", "rolando_jr", "olivia", "troy_lits", "angelyn"],
     gallery: [
-      { title: "Teaching Commendation Ceremony", date: "2001", image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=600" },
-      { title: "Cooking for the family feast", date: "2015", image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=600" }
+      { title: "Cherished Smile", date: "Mama's Memory", image: "mama/0cbf87d0-af2f-460f-9add-7ea4ba515814.jpe" },
+      { title: "Warm Moments", date: "Mama's Memory", image: "mama/0f729537-6d74-4654-8c78-19a907f9d629.jpe" },
+      { title: "Candid Portrait", date: "Mama's Memory", image: "mama/11734599-1e7a-4cd9-a9c8-9914f67e6462.jpe" },
+      { title: "Happy Gathering", date: "Mama's Memory", image: "mama/13dfb3cb-09e0-466a-b9ee-9d61547c126a.jpe" },
+      { title: "Loving Mother", date: "Mama's Memory", image: "mama/1ea4da5b-4051-47af-8a11-1b9746e03f44.jpe" },
+      { title: "Sweet Smiles", date: "Mama's Memory", image: "mama/3bb8c2e1-b91d-4098-b911-501710952549.jpe" },
+      { title: "Family Feast", date: "Mama's Memory", image: "mama/3fe5a80b-9303-41c1-ad7f-47ea0743414a.jpe" },
+      { title: "Special Celebration", date: "Mama's Memory", image: "mama/44083458-7cf9-4f7e-a925-508e9915b4eb.jpe" },
+      { title: "Bright Day", date: "Mama's Memory", image: "mama/4f3067b2-1d72-465c-bb9d-8847dfb470af.jpe" },
+      { title: "Mama's Portrait", date: "Mama's Memory", image: "mama/694f72b2-3375-4daf-b144-7c098beb5991.jpe" },
+      { title: "Joyful Gathering", date: "Mama's Memory", image: "mama/736dbf58-49fe-4ffb-8883-6bb0538bd37c.jpe" },
+      { title: "Warm Portrait", date: "Mama's Memory", image: "mama/75bf8234-9331-4888-9570-3ed700670d82.jpe" },
+      { title: "Lovely Day", date: "Mama's Memory", image: "mama/8eaab62d-d458-4954-880b-0a27b074c583.jpe" },
+      { title: "Candid Smile", date: "Mama's Memory", image: "mama/951f17c5-4417-4c61-b611-69620965b373.jpe" },
+      { title: "Happy Memories", date: "Mama's Memory", image: "mama/9a81b265-da08-4d4c-a147-4236df5f79cc.jpe" },
+      { title: "Family Portrait", date: "Mama's Memory", image: "mama/c2aca60b-66a5-45c7-91f0-75512aeba728.jpe" },
+      { title: "Beautiful Moment", date: "Mama's Memory", image: "mama/caac5735-c46c-49ea-9c0b-3b7b0c3065dd.jpe" },
+      { title: "Happy Time", date: "Mama's Memory", image: "mama/d87caa59-6061-41e8-aa44-2cbc326ba41b.jpe" },
+      { title: "Sweetest Memories", date: "Mama's Memory", image: "mama/ee7c7d46-0c32-43f8-8acb-9a7620c14e41.jpe" }
     ]
   },
   "manuelito": {
@@ -51,7 +71,7 @@ const familyData = {
     occupation: "Bike Technnician",
     tagline: "Hard work pays off, but family is the real reward.",
     bio: "Manuelito builds software and keeps the family's digital archives running.",
-    image: null,
+    image: "photos/kuya.jpg",
     spouse: "jonna",
     parents: ["rolando", "juvilyn"],
     children: ["alexandra", "altheo"],
@@ -71,7 +91,7 @@ const familyData = {
     occupation: "Head Pediatric Nurse",
     tagline: "Care is about treating the person, not just the symptom.",
     bio: "Mary Jane leads pediatric care and supports family health initiatives.",
-    image: null,
+    image: "photos/Mary Jane.jpe",
     spouse: "rommel",
     parents: ["rolando", "juvilyn"],
     children: ["loloy"],
@@ -125,7 +145,7 @@ const familyData = {
     occupation: "Operations Manager",
     tagline: "Efficiency is doing things right; effectiveness is doing the right things.",
     bio: "Mary Joy manages logistics for an international retail brand.",
-    image: null,
+    image: "photos/Mary Joy.jpe",
     spouse: "brian_navarro",
     parents: ["rolando", "juvilyn"],
     children: ["jhian_d_navarro", "josh_d_navarro", "yhan_e_navarro", "brianna_d_navarro"],
@@ -230,7 +250,7 @@ const familyData = {
     occupation: "Certified Public Accountant",
     tagline: "Numbers speak truth if you listen with precision.",
     bio: "Mary Grace works in finance and helps manage family finances for reunions.",
-    image: null,
+    image: "photos/Mary Grace.jpe",
     spouse: "bj_maularde",
     parents: ["rolando", "juvilyn"],
     children: ["john_marvin_dancel"],
@@ -284,7 +304,7 @@ const familyData = {
     occupation: "Lead UI/UX Designer",
     tagline: "Design is not just what it looks like, but how it works.",
     bio: "R-Jay is a creative lead in digital product design.",
-    image: null,
+    image: "photos/R-Jay.jpe",
     spouse: null,
     parents: ["rolando", "juvilyn"],
     children: [],
@@ -304,7 +324,7 @@ const familyData = {
     occupation: "Clinical Pharmacist",
     tagline: "Science combined with care yields the best remedies.",
     bio: "Cherry Anne works in clinical research evaluating drug interactions.",
-    image: null,
+    image: "photos/che.jpe",
     spouse: null,
     parents: ["rolando", "juvilyn"],
     children: ["lhian_d_lobendino", "andrew_d_lobendino", "levy_ace_d_lobendino"],
@@ -375,7 +395,7 @@ const familyData = {
     occupation: "Civil Engineer",
     tagline: "We build structures that stand the test of time and weather.",
     bio: "Rolando Jr. is a civil engineer working on infrastructure projects.",
-    image: null,
+    image: "photos/RolandoJR.jpe",
     spouse: "marian_solijon",
     parents: ["rolando", "juvilyn"],
     children: [],
@@ -412,7 +432,7 @@ const familyData = {
     occupation: "Copywriter & Journalist",
     tagline: "Words are lenses that bring the truths of human nature into focus.",
     bio: "Olivia writes about culture and food history.",
-    image: null,
+    image: "photos/Olivia.jpe",
     spouse: null,
     parents: ["rolando", "juvilyn"],
     children: [],
@@ -432,12 +452,12 @@ const familyData = {
     occupation: "Bachelor of Science in Information Technology Student",
     tagline: "Building tomorrow's solutions, one line of code at a time.",
     bio: "Troy Lits bridging the gap between complex data and elegant solutions.",
-    image: "1x1ko.jpg",
+    image: "photos/1x1ko.jpg",
     spouse: null,
     parents: ["rolando", "juvilyn"],
     children: [],
     gallery: [
-      { title: "My 1x1 picture hehe", date: "2022", image: "1x1ko.jpg" },
+      { title: "My 1x1 picture hehe", date: "2022", image: "photos/1x1ko.jpg" },
       { title: "Coding Project Portfolio", date: "2024", image: "https://images.unsplash.com/photo-1517694712642-f529300b5a3f?q=80&w=600" }
     ]
   },
@@ -452,7 +472,7 @@ const familyData = {
     occupation: "Tourism Management Student",
     tagline: "Connecting cultures, crafting unforgettable journeys.",
     bio: "Angelyn is dedicated to sustainable hospitality, destination branding, and seamless guest relations.",
-    image: "ang.jpe",
+    image: "photos/ang.jpe",
     spouse: null,
     parents: ["rolando", "juvilyn"],
     children: [],
@@ -733,26 +753,63 @@ function initProfilePage() {
   const familyGrid = document.getElementById('family-grid');
   if (familyGrid) {
     familyGrid.innerHTML = '';
-    let relationalMembers = [];
+    
+    let spouses = [];
+    let children = [];
+    let parents = [];
+    let siblings = [];
     
     // Spouse relationship
     if (member.spouse && familyData[member.spouse]) {
-      relationalMembers.push({
+      spouses.push({
         member: familyData[member.spouse],
         relationLabel: "Spouse"
       });
     }
     
-    // Parents relationship
-    if (member.parents && member.parents.length > 0) {
-      member.parents.forEach(pId => {
-        if (familyData[pId]) {
-          relationalMembers.push({
-            member: familyData[pId],
-            relationLabel: familyData[pId].relationship.includes("Patriarch") || familyData[pId].relationship.includes("Father") ? "Father" : "Mother"
+    // Children relationship
+    if (member.children && member.children.length > 0) {
+      member.children.forEach(cId => {
+        if (familyData[cId]) {
+          const childMember = familyData[cId];
+          let relationLabel = "Son";
+          const relLower = childMember.relationship ? childMember.relationship.toLowerCase() : "";
+          const groupLower = childMember.roleGroup ? childMember.roleGroup.toLowerCase() : "";
+          if (relLower.includes("daughter")) {
+            relationLabel = "Daughter";
+          } else if (relLower.includes("dog") || groupLower === "pet") {
+            relationLabel = childMember.relationship || "Pet";
+          } else if (relLower.includes("son")) {
+            relationLabel = "Son";
+          }
+          children.push({
+            member: childMember,
+            relationLabel: relationLabel
           });
         }
       });
+    }
+    
+    // Parents relationship (Mother first, then Father)
+    if (member.parents && member.parents.length > 0) {
+      let tempParents = [];
+      member.parents.forEach(pId => {
+        if (familyData[pId]) {
+          const parentMember = familyData[pId];
+          const isFather = parentMember.relationship.includes("Father") || parentMember.id === "rolando";
+          tempParents.push({
+            member: parentMember,
+            relationLabel: isFather ? "Father" : "Mother"
+          });
+        }
+      });
+      // Sort: Mother first, then Father
+      tempParents.sort((a, b) => {
+        if (a.relationLabel === "Mother" && b.relationLabel === "Father") return -1;
+        if (a.relationLabel === "Father" && b.relationLabel === "Mother") return 1;
+        return 0;
+      });
+      parents = tempParents;
     }
     
     // Siblings relationship (siblings share at least one parent)
@@ -763,9 +820,13 @@ function initProfilePage() {
           familyData[pId].children.forEach(cId => {
             if (cId !== member.id && !checkedSiblings.has(cId) && familyData[cId]) {
               checkedSiblings.add(cId);
-              relationalMembers.push({
-                member: familyData[cId],
-                relationLabel: familyData[cId].relationship.toLowerCase().includes("daughter") || familyData[cId].relationship.toLowerCase().includes("sister") ? "Sister" : "Brother"
+              const sibMember = familyData[cId];
+              const isSister = sibMember.relationship.toLowerCase().includes("daughter") || 
+                               sibMember.relationship.toLowerCase().includes("sister") || 
+                               sibMember.relationship.toLowerCase().includes("youngest daughter");
+              siblings.push({
+                member: sibMember,
+                relationLabel: isSister ? "Sister" : "Brother"
               });
             }
           });
@@ -773,17 +834,13 @@ function initProfilePage() {
       });
     }
     
-    // Children relationship
-    if (member.children && member.children.length > 0) {
-      member.children.forEach(cId => {
-        if (familyData[cId]) {
-          relationalMembers.push({
-            member: familyData[cId],
-            relationLabel: familyData[cId].relationship.toLowerCase().includes("daughter") ? "Daughter" : "Son"
-          });
-        }
-      });
-    }
+    // Ordered: Spouse -> Children -> Parents (Mother first, then Father) -> Siblings
+    let relationalMembers = [
+      ...spouses,
+      ...children,
+      ...parents,
+      ...siblings
+    ];
     
     if (relationalMembers.length === 0) {
       familyGrid.innerHTML = `<p class="bio-text" style="grid-column: 1/-1; font-style: italic; color: var(--color-text-muted);">Immediate family records are currently being cataloged.</p>`;
@@ -838,10 +895,93 @@ function initProfilePage() {
         `;
         galleryGrid.appendChild(wrapper);
       });
+      initLightbox();
     } else {
       if (gallerySection) gallerySection.style.display = 'none';
     }
   }
+}
+
+// Lightbox modal functionality for media gallery
+function initLightbox() {
+  console.log("initLightbox: Initializing...");
+  let modal = document.getElementById('lightbox-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'lightbox-modal';
+    modal.className = 'lightbox-modal';
+    modal.innerHTML = `
+      <button class="lightbox-back-btn" id="lightbox-close">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+        </svg>
+        Back to Gallery
+      </button>
+      <div class="lightbox-content">
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <div class="lightbox-caption">
+          <div class="lightbox-title" id="lightbox-title"></div>
+          <div class="lightbox-desc" id="lightbox-desc"></div>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+    
+    const closeBtn = document.getElementById('lightbox-close');
+    const closeModal = () => {
+      console.log("initLightbox: Closing modal");
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+    
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal || e.target.classList.contains('lightbox-content')) {
+        closeModal();
+      }
+    });
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeModal();
+      }
+    });
+  }
+  
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  console.log(`initLightbox: Found ${galleryItems.length} gallery items`);
+  galleryItems.forEach((item, index) => {
+    const imgWrapper = item.querySelector('.gallery-img-wrapper');
+    const img = item.querySelector('.gallery-img');
+    const titleEl = item.querySelector('.gallery-title');
+    const dateEl = item.querySelector('.gallery-date');
+    
+    const title = titleEl ? titleEl.textContent : '';
+    const date = dateEl ? dateEl.textContent : '';
+    
+    if (imgWrapper && img) {
+      // Remove any existing listener by cloning (in case initLightbox is called multiple times)
+      const newImgWrapper = imgWrapper.cloneNode(true);
+      imgWrapper.parentNode.replaceChild(newImgWrapper, imgWrapper);
+      
+      newImgWrapper.addEventListener('click', () => {
+        console.log(`initLightbox: Item ${index} clicked, opening ${img.src}`);
+        const modalImg = document.getElementById('lightbox-img');
+        const modalTitle = document.getElementById('lightbox-title');
+        const modalDesc = document.getElementById('lightbox-desc');
+        
+        if (modalImg) {
+          modalImg.src = img.src;
+          modalImg.alt = img.alt || '';
+        }
+        if (modalTitle) modalTitle.textContent = title;
+        if (modalDesc) modalDesc.textContent = date;
+        
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+  });
 }
 // Global page load router
 document.addEventListener('DOMContentLoaded', () => {
@@ -850,6 +990,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   if (document.getElementById('tree-container')) {
     initIndexPage();
+    initIndexGallery();
   } else if (document.getElementById('profile-layout') || document.getElementById('error-container')) {
     initProfilePage();
   }
@@ -857,6 +998,38 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize theme toggle
   initThemeToggle();
 });
+
+// Dancel Family main gallery dataset
+const familyGalleryData = [
+  { title: "The Dancel Family Selfie", date: "Family Gathering", image: "papa_photos/e61131a9-c874-4fce-8b3f-780211de1e40.jpe" },
+  { title: "Family Feast & Gathering", date: "Dinner Gathering", image: "mama/3fe5a80b-9303-41c1-ad7f-47ea0743414a.jpe" },
+  { title: "Big Family Portrait", date: "Special Celebration", image: "mama/c2aca60b-66a5-45c7-91f0-75512aeba728.jpe" },
+  { title: "Joyful Moments Together", date: "Home Gathering", image: "mama/736dbf58-49fe-4ffb-8883-6bb0538bd37c.jpe" },
+  { title: "Sweet Grandchild Moments", date: "Loving Family", image: "papa_photos/29378b7f-d7df-4661-9491-7f6a7068a352.jpe" },
+  { title: "Papa's Signature Pose", date: "Restaurant Dinner", image: "papa_photos/b538d9f2-4a98-4fa0-bd9f-24ff9fe8bd5c.jpe" }
+];
+
+function initIndexGallery() {
+  const familyGrid = document.getElementById('family-gallery-grid');
+  if (familyGrid) {
+    familyGrid.innerHTML = '';
+    familyGalleryData.forEach(item => {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'gallery-item';
+      wrapper.innerHTML = `
+        <div class="gallery-img-wrapper">
+          <img src="${item.image}" alt="${item.title}" class="gallery-img" loading="lazy">
+        </div>
+        <div class="gallery-caption">
+          <h4 class="gallery-title">${item.title}</h4>
+          <span class="gallery-date">${item.date}</span>
+        </div>
+      `;
+      familyGrid.appendChild(wrapper);
+    });
+    initLightbox();
+  }
+}
 
 // Theme Toggle Functionality
 function initThemeToggle() {

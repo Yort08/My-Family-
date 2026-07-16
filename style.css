@@ -940,3 +940,147 @@ footer svg {
 .animate-fade-in {
   animation: fadeIn 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
 }
+
+/* Lightbox Modal */
+.lightbox-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 10000;
+  overflow-y: scroll; /* Force scrollbar so tall images are scrollable */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(8px);
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.lightbox-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-content {
+  display: inline-block;
+  max-width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  object-fit: contain;
+}
+
+.lightbox-modal.active .lightbox-img {
+  transform: scale(1);
+}
+
+.lightbox-back-btn {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  padding: 0.65rem 1.25rem;
+  border-radius: 50px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  z-index: 10001;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.lightbox-back-btn:hover {
+  background: var(--color-accent-gold);
+  border-color: var(--color-accent-gold);
+  color: #fff;
+  transform: translateX(-4px);
+  box-shadow: 0 6px 16px rgba(197, 155, 39, 0.4);
+}
+
+.lightbox-back-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.lightbox-caption {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #fff;
+  font-family: var(--font-serif-body);
+}
+
+.lightbox-title {
+  font-size: 1.4rem;
+  font-family: var(--font-serif-header);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--color-bg-base);
+}
+
+.lightbox-desc {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.gallery-img-wrapper {
+  cursor: zoom-in;
+}
+
+/* Family Gallery Main Page */
+.family-gallery-section {
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.gallery-container {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.gallery-section-title {
+  font-size: 2rem;
+  color: var(--color-accent-emerald);
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gallery-section-title::before,
+.gallery-section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-border);
+}

@@ -948,16 +948,20 @@ footer svg {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #000; /* True black background for fullscreen */
   z-index: 10000;
-  overflow-y: scroll; /* Force scrollbar so tall images are scrollable */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  backdrop-filter: blur(8px);
-  padding: 6rem 1.5rem 4rem;
-  text-align: center;
   box-sizing: border-box;
+}
+
+.lightbox-modal:fullscreen {
+  background-color: #000;
 }
 
 .lightbox-modal.active {
@@ -966,20 +970,20 @@ footer svg {
 }
 
 .lightbox-content {
-  display: inline-block;
-  max-width: 90%;
-  text-align: center;
-  margin: 0 auto;
+  max-width: 95%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
 .lightbox-img {
   max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  max-height: 75vh; /* restrict height so image always fits screen completely */
   border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
   border: 2px solid rgba(255, 255, 255, 0.15);
   transform: scale(0.95);
   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -1009,7 +1013,7 @@ footer svg {
   z-index: 10001;
   transition: all 0.3s ease;
   backdrop-filter: blur(8px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   outline: none;
 }
 

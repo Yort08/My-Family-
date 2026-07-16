@@ -932,6 +932,21 @@ function initLightbox() {
       console.log("initLightbox: Closing modal");
       modal.classList.remove('active');
       document.body.style.overflow = '';
+      
+      // Exit browser fullscreen mode
+      try {
+        if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        }
+      } catch (err) {
+        console.error("Fullscreen exit error:", err);
+      }
     };
     
     if (closeBtn) closeBtn.addEventListener('click', closeModal);
@@ -946,6 +961,18 @@ function initLightbox() {
         closeModal();
       }
     });
+
+    // Automatically close the modal when exiting fullscreen via Escape key or browser controls
+    const onFullscreenChange = () => {
+      if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+        if (modal.classList.contains('active')) {
+          closeModal();
+        }
+      }
+    };
+    document.addEventListener('fullscreenchange', onFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', onFullscreenChange);
+    document.addEventListener('msfullscreenchange', onFullscreenChange);
   }
   
   const galleryItems = document.querySelectorAll('.gallery-item');
@@ -960,7 +987,6 @@ function initLightbox() {
     const date = dateEl ? dateEl.textContent : '';
     
     if (imgWrapper && img) {
-      // Remove any existing listener by cloning (in case initLightbox is called multiple times)
       const newImgWrapper = imgWrapper.cloneNode(true);
       imgWrapper.parentNode.replaceChild(newImgWrapper, imgWrapper);
       
@@ -979,6 +1005,19 @@ function initLightbox() {
         
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
+
+        // Trigger browser fullscreen mode on the modal container
+        try {
+          if (modal.requestFullscreen) {
+            modal.requestFullscreen();
+          } else if (modal.webkitRequestFullscreen) {
+            modal.webkitRequestFullscreen();
+          } else if (modal.msRequestFullscreen) {
+            modal.msRequestFullscreen();
+          }
+        } catch (err) {
+          console.error("Fullscreen request error:", err);
+        }
       });
     }
   });

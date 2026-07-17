@@ -1088,3 +1088,33 @@ footer svg {
   height: 1px;
   background-color: var(--color-border);
 }
+
+/* Adopted section styling for layout below sibling row */
+.adopted-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.adopted-section::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  border-left: 2px solid var(--color-border);
+  width: 0;
+  height: 50px;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 992px) {
+  .adopted-section {
+    margin-top: 30px;
+  }
+  .adopted-section::before {
+    top: -30px;
+    height: 30px;
+  }
+}

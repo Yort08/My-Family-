@@ -14,7 +14,7 @@ const familyData = {
     image: "photos/Rolando.jpe",
     spouse: "juvilyn",
     parents: [],
-    children: ["manuelito", "mary_jane", "mary_joy", "mary_grace", "r_jay", "cherry_anne", "rolando_jr", "olivia", "troy_lits", "angelyn"],
+    children: ["manuelito", "mary_jane", "mary_joy", "mary_grace", "r_jay", "cherry_anne", "russll", "rolando_jr", "olivia", "troy_lits", "angelyn"],
     gallery: [
       { title: "Signature Chin-Pose at Dinner", date: "Dinner Gathering", image: "papa_photos/b538d9f2-4a98-4fa0-bd9f-24ff9fe8bd5c.jpe" },
       { title: "Sweet Moments with Grandchild", date: "Family Time", image: "papa_photos/29378b7f-d7df-4661-9491-7f6a7068a352.jpe" },
@@ -37,7 +37,7 @@ const familyData = {
     image: "photos/Juvilyn Dancel.jpe",
     spouse: "rolando",
     parents: [],
-    children: ["manuelito", "mary_jane", "mary_joy", "mary_grace", "r_jay", "cherry_anne", "rolando_jr", "olivia", "troy_lits", "angelyn"],
+    children: ["manuelito", "mary_jane", "mary_joy", "mary_grace", "r_jay", "cherry_anne", "russll", "rolando_jr", "olivia", "troy_lits", "angelyn"],
     gallery: [
       { title: "Cherished Smile", date: "Mama's Memory", image: "mama/0cbf87d0-af2f-460f-9add-7ea4ba515814.jpe" },
       { title: "Warm Moments", date: "Mama's Memory", image: "mama/0f729537-6d74-4654-8c78-19a907f9d629.jpe" },
@@ -410,6 +410,23 @@ const familyData = {
       { title: "Clinical Research Presentation", date: "2020", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600" },
       { title: "Pharmacy Innovation Project", date: "2022", image: "https://images.unsplash.com/photo-1585461231042-528ee7d0d75b?q=80&w=600" }
     ]
+  },
+  "russll": {
+    id: "russll",
+    name: "Russll Lu Caisido",
+    relationship: "Adopted Son",
+    roleGroup: "sibling",
+    generation: 2,
+    dates: "August 4, 1994",
+    birthPlace: "",
+    occupation: "Bikeshop Owner",
+    tagline: "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+    bio: "Russll is the beloved adopted son of Rolando and Juvilyn Dancel. He runs a local bikeshop.",
+    image: "photos/russ.jpe",
+    spouse: null,
+    parents: ["rolando", "juvilyn"],
+    children: [],
+    gallery: []
   },
   "lhian_d_lobendino": {
     id: "lhian_d_lobendino",

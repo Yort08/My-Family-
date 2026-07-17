@@ -91,13 +91,14 @@ const familyData = {
     occupation: "Head Pediatric Nurse",
     tagline: "Care is about treating the person, not just the symptom.",
     bio: "Mary Jane leads pediatric care and supports family health initiatives.",
-    image: "photos/Mary Jane.jpe",
+    image: "jane/jane.jpe",
     spouse: "rommel",
     parents: ["rolando", "juvilyn"],
     children: ["loloy"],
     gallery: [
-      { title: "Pediatric Care Excellence Award", date: "2018", image: "https://images.unsplash.com/photo-1576091160550-112173f7f869?q=80&w=600" },
-      { title: "Family Health Wellness Initiative", date: "2022", image: "https://images.unsplash.com/photo-1631217314830-d13cf78d3cc0?q=80&w=600" }
+      { title: "Jane's Profile Photo", date: "Jane's Memory", image: "jane/jane.jpe" },
+      { title: "Rommel's Profile Photo", date: "Jane's Memory", image: "jane/rommel.jpe" },
+      { title: "Loloy's Profile Photo", date: "Jane's Memory", image: "jane/loy.jpe" },
     ]
   },
   "rommel": {
@@ -106,16 +107,20 @@ const familyData = {
     relationship: "Spouse",
     roleGroup: "spouse",
     generation: 2,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "March 15, 1985",
+    birthPlace: "Irosin, Sorsogon, Philippines",
+    occupation: "Welder",
     tagline: "",
     bio: "Rommel is the caring husband of Mary Jane Dancel.",
-    image: null,
+    image: "jane/rommel.jpe",
     spouse: "mary_jane",
     parents: [],
     children: ["loloy"],
-    gallery: []
+    gallery: [
+      { title: "Jane's Profile Photo", date: "Jane's Memory", image: "jane/jane.jpe" },
+      { title: "Rommel's Profile Photo", date: "Jane's Memory", image: "jane/rommel.jpe" },
+      { title: "Loloy's Profile Photo", date: "Jane's Memory", image: "jane/loy.jpe" }
+    ]
   },
   "loloy": {
     id: "loloy",
@@ -123,16 +128,20 @@ const familyData = {
     relationship: "Pet Dog",
     roleGroup: "pet",
     generation: 3,
-    dates: "",
-    birthPlace: "",
+    dates: "Dec 3, 2025",
+    birthPlace: "PNP, Batia, Bocaue, Bulacan, Philippines",
     occupation: "Family Companion",
     tagline: "A beloved furry member of the Dancel-Bajaro family.",
     bio: "Loloy is the cherished family dog who brings joy and companionship to Mary Jane and Rommel's home.",
-    image: null,
+    image: "jane/loy.jpe",
     spouse: null,
     parents: ["mary_jane", "rommel"],
     children: [],
-    gallery: []
+    gallery: [
+      { title: "Jane's Profile Photo", date: "Jane's Memory", image: "jane/jane.jpe" },
+      { title: "Rommel's Profile Photo", date: "Jane's Memory", image: "jane/rommel.jpe" },
+      { title: "Loloy's Profile Photo", date: "Jane's Memory", image: "jane/loy.jpe" }
+    ]
   },
   "mary_joy": {
     id: "mary_joy",
@@ -177,9 +186,9 @@ const familyData = {
     relationship: "Son",
     roleGroup: "child",
     generation: 3,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "Dec 27, 2010",
+    birthPlace: "Batia, Bocaue, Bulacan, Philippines",
+    occupation: "Student",
     tagline: "",
     bio: "",
     image: null,
@@ -194,12 +203,12 @@ const familyData = {
     relationship: "Son",
     roleGroup: "child",
     generation: 3,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "Oct 26, 2012",
+    birthPlace: "Batia, Bocaue, Bulacan, Philippines",
+    occupation: "Student",
     tagline: "",
     bio: "",
-    image: null,
+    image: "photos/josh.jpe",
     spouse: null,
     parents: ["mary_joy", "brian_navarro"],
     children: [],
@@ -211,9 +220,9 @@ const familyData = {
     relationship: "Son",
     roleGroup: "child",
     generation: 3,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "Dec 21, 2014",
+    birthPlace: "Batia, Bocaue, Bulacan, Philippines",
+    occupation: "Student",
     tagline: "",
     bio: "",
     image: null,
@@ -228,12 +237,12 @@ const familyData = {
     relationship: "Daughter",
     roleGroup: "child",
     generation: 3,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "June 22, 2020",
+    birthPlace: "Batia, Bocaue, Bulacan, Philippines",
+    occupation: "Student",
     tagline: "",
     bio: "",
-    image: null,
+    image: "photos/brianna.jpe",
     spouse: null,
     parents: ["mary_joy", "brian_navarro"],
     children: [],
@@ -250,24 +259,24 @@ const familyData = {
     occupation: "Certified Public Accountant",
     tagline: "Numbers speak truth if you listen with precision.",
     bio: "Mary Grace works in finance and helps manage family finances for reunions.",
-    image: "photos/Mary Grace.jpe",
+    image: "photos/gracia.jpe",
     spouse: "bj_maularde",
     parents: ["rolando", "juvilyn"],
     children: ["john_marvin_dancel"],
     gallery: [
-      { title: "Financial Planning Seminar", date: "2019", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600" },
-      { title: "Family Reunion Budget Management", date: "2022", image: "https://images.unsplash.com/photo-1579621970563-430f63602566?q=80&w=600" }
+      { title: "Aling Grace", date: "2026", image: "photos/Mary Grace.jpe" },
+      { title: "Doña Grace", date: "2026", image: "photos/gracia.jpe" }
     ]
   },
   "bj_maularde": {
     id: "bj_maularde",
-    name: "Bj Maularde",
+    name: "Jonard Maularde",
     relationship: "Spouse",
     roleGroup: "spouse",
     generation: 2,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "July 21, 1976",
+    birthPlace: "Claveria, Cagayan De Oro, Philippines",
+    occupation: "Driver",
     tagline: "",
     bio: "Bj is the loving husband of Mary Grace D. Dancel.",
     image: null,
@@ -282,12 +291,12 @@ const familyData = {
     relationship: "Son",
     roleGroup: "child",
     generation: 3,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "Oct 9, 2010",
+    birthPlace: "Northville 5, Batia, Bocaue, Bulacan, Philippines",
+    occupation: "Student",
     tagline: "",
     bio: "",
-    image: null,
+    image: "photos/jm.jpe",
     spouse: null,
     parents: ["mary_grace", "bj_maularde"],
     children: [],
@@ -301,16 +310,74 @@ const familyData = {
     generation: 2,
     dates: "May 25, 1993",
     birthPlace: "Banlok Lolomboy, Bulacan, Philippines",
-    occupation: "Lead UI/UX Designer",
-    tagline: "Design is not just what it looks like, but how it works.",
-    bio: "R-Jay is a creative lead in digital product design.",
+    occupation: "Delivery Rider/Bike Technician",
+    tagline: "Deliver your parcel safely. Make your bike better",
+    bio: "R-Jay is ahardworking delivery rider and bike technician who ensures timely deliveries and smooth rides.",
     image: "photos/R-Jay.jpe",
     spouse: null,
     parents: ["rolando", "juvilyn"],
+    children: ["kholeen_khate", "cheska_sofia"],
+    gallery: [
+      { title: "Family Moment", date: "R-Jay's Memory", image: "Rjay Family/3d7d1258-0cf7-4154-93d6-c33c42021459.jpe" },
+      { title: "Joyful Day", date: "R-Jay's Memory", image: "Rjay Family/5f8022a7-b30b-45bc-bea9-2fb267e34789.jpe" },
+      { title: "Beautiful Smile", date: "R-Jay's Memory", image: "Rjay Family/7d643df9-47a5-415c-b1af-a3655acdfb56.jpe" },
+      { title: "Lovely Gathering", date: "R-Jay's Memory", image: "Rjay Family/9b8af5da-cdb3-4f47-be6f-9746d03d8b4d.jpe" },
+      { title: "Cherished Moment", date: "R-Jay's Memory", image: "Rjay Family/c8606fd0-cbc7-4eb2-9617-fe61e9a50fea.jpe" },
+      { title: "Happy Times", date: "R-Jay's Memory", image: "Rjay Family/dd859851-3c8b-4db2-98d1-2a11e4885a38.jpe" },
+      { title: "Sweet Memories", date: "R-Jay's Memory", image: "Rjay Family/de7198bf-3d60-4e39-922e-ac3961f5d8c6.jpe" },
+      { title: "Family Photo", date: "R-Jay's Memory", image: "Rjay Family/ffdf88e3-9307-48ee-847d-d02506b31f75.jpe" }
+    ]
+  },
+  "kholeen_khate": {
+    id: "kholeen_khate",
+    name: "Kholeen Khate Dancel",
+    relationship: "Daughter",
+    roleGroup: "child",
+    generation: 3,
+    dates: "Nov 20, 2016",
+    birthPlace: "Batia, Bocaue, Bulacan, Philippines",
+    occupation: "Student",
+    tagline: "",
+    bio: "Kholeen Khate is the beloved daughter of R-Jay Dancel.",
+    image: "photos/khate.jpe",
+    spouse: null,
+    parents: ["r_jay"],
     children: [],
     gallery: [
-      { title: "Digital Product Design Showcase", date: "2021", image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=600" },
-      { title: "UI/UX Design Awards", date: "2023", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a5?q=80&w=600" }
+      { title: "Family Moment", date: "R-Jay's Memory", image: "Rjay Family/3d7d1258-0cf7-4154-93d6-c33c42021459.jpe" },
+      { title: "Joyful Day", date: "R-Jay's Memory", image: "Rjay Family/5f8022a7-b30b-45bc-bea9-2fb267e34789.jpe" },
+      { title: "Beautiful Smile", date: "R-Jay's Memory", image: "Rjay Family/7d643df9-47a5-415c-b1af-a3655acdfb56.jpe" },
+      { title: "Lovely Gathering", date: "R-Jay's Memory", image: "Rjay Family/9b8af5da-cdb3-4f47-be6f-9746d03d8b4d.jpe" },
+      { title: "Cherished Moment", date: "R-Jay's Memory", image: "Rjay Family/c8606fd0-cbc7-4eb2-9617-fe61e9a50fea.jpe" },
+      { title: "Happy Times", date: "R-Jay's Memory", image: "Rjay Family/dd859851-3c8b-4db2-98d1-2a11e4885a38.jpe" },
+      { title: "Sweet Memories", date: "R-Jay's Memory", image: "Rjay Family/de7198bf-3d60-4e39-922e-ac3961f5d8c6.jpe" },
+      { title: "Family Photo", date: "R-Jay's Memory", image: "Rjay Family/ffdf88e3-9307-48ee-847d-d02506b31f75.jpe" }
+    ]
+  },
+  "cheska_sofia": {
+    id: "cheska_sofia",
+    name: "Cheska Sofia Dancel",
+    relationship: "Daughter",
+    roleGroup: "child",
+    generation: 3,
+    dates: "Dec 27, 2023",
+    birthPlace: "Batia, Bocaue, Bulacan, Philippines",
+    occupation: "",
+    tagline: "",
+    bio: "Cheska Sofia is the beloved daughter of R-Jay Dancel.",
+    image: "photos/cheska.jpe",
+    spouse: null,
+    parents: ["r_jay"],
+    children: [],
+    gallery: [
+      { title: "Family Moment", date: "R-Jay's Memory", image: "Rjay Family/3d7d1258-0cf7-4154-93d6-c33c42021459.jpe" },
+      { title: "Joyful Day", date: "R-Jay's Memory", image: "Rjay Family/5f8022a7-b30b-45bc-bea9-2fb267e34789.jpe" },
+      { title: "Beautiful Smile", date: "R-Jay's Memory", image: "Rjay Family/7d643df9-47a5-415c-b1af-a3655acdfb56.jpe" },
+      { title: "Lovely Gathering", date: "R-Jay's Memory", image: "Rjay Family/9b8af5da-cdb3-4f47-be6f-9746d03d8b4d.jpe" },
+      { title: "Cherished Moment", date: "R-Jay's Memory", image: "Rjay Family/c8606fd0-cbc7-4eb2-9617-fe61e9a50fea.jpe" },
+      { title: "Happy Times", date: "R-Jay's Memory", image: "Rjay Family/dd859851-3c8b-4db2-98d1-2a11e4885a38.jpe" },
+      { title: "Sweet Memories", date: "R-Jay's Memory", image: "Rjay Family/de7198bf-3d60-4e39-922e-ac3961f5d8c6.jpe" },
+      { title: "Family Photo", date: "R-Jay's Memory", image: "Rjay Family/ffdf88e3-9307-48ee-847d-d02506b31f75.jpe" }
     ]
   },
   "cherry_anne": {
@@ -339,9 +406,9 @@ const familyData = {
     relationship: "Son",
     roleGroup: "child",
     generation: 3,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "Dec 25, 2012 ",
+    birthPlace: "Batia, Bocaue, Bulacan, Philippines",
+    occupation: "Student",
     tagline: "",
     bio: "",
     image: null,
@@ -356,9 +423,9 @@ const familyData = {
     relationship: "Son",
     roleGroup: "child",
     generation: 3,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "Dec 21, 2014",
+    birthPlace: "Igulot, Bocaue, Bulacan, Philippines",
+    occupation: "Student",
     tagline: "",
     bio: "",
     image: null,
@@ -373,9 +440,9 @@ const familyData = {
     relationship: "Son",
     roleGroup: "child",
     generation: 3,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "Sept 17, 2020",
+    birthPlace: "Igulot, Bocaue, Bulacan, Philippines",
+    occupation: "Student",
     tagline: "",
     bio: "",
     image: null,
@@ -400,8 +467,7 @@ const familyData = {
     parents: ["rolando", "juvilyn"],
     children: [],
     gallery: [
-      { title: "Infrastructure Development Project", date: "2019", image: "https://images.unsplash.com/photo-1581092162562-40038f60aa14?q=80&w=600" },
-      { title: "Bridge Construction Achievement", date: "2023", image: "https://images.unsplash.com/photo-1581092162562-40038f60aa14?q=80&w=600" }
+      { title: "Cherished Memory", date: "Special Memory", image: "photos/marloy.jpe" }
     ]
   },
   "marian_solijon": {
@@ -410,16 +476,18 @@ const familyData = {
     relationship: "Spouse",
     roleGroup: "spouse",
     generation: 2,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "Aug 8, 1999",
+    birthPlace: "Wawa, Balagtas, Bulacan, Philippines",
+    occupation: "Accounting",
     tagline: "",
     bio: "Marian is the loving wife of Rolando Dancel Jr.",
-    image: null,
+    image: "photos/marian.jpe",
     spouse: "rolando_jr",
     parents: [],
     children: [],
-    gallery: []
+    gallery: [
+      { title: "Cherished Memory", date: "Special Memory", image: "photos/marloy.jpe" }
+    ]
   },
   "olivia": {
     id: "olivia",
@@ -428,17 +496,74 @@ const familyData = {
     roleGroup: "sibling",
     generation: 2,
     dates: "Feb 9, 1999",
-    birthPlace: "Abangan Sur Marilao, Bulaca, Philippines",
-    occupation: "Copywriter & Journalist",
-    tagline: "Words are lenses that bring the truths of human nature into focus.",
+    birthPlace: "Igulot, Bocaue, Bulacan, Philippines",
+    occupation: "House Wife",
+    tagline: "Do not let your heart be troubled.",
     bio: "Olivia writes about culture and food history.",
-    image: "photos/Olivia.jpe",
-    spouse: null,
+    image: "photos/viaa.jpe",
+    spouse: "jeffrey_agohar",
     parents: ["rolando", "juvilyn"],
+    children: ["nasya_amari"],
+    gallery: [
+      { title: "Sweet Moment", date: "Vhia's Memory", image: "Vhia/282193fd-32e1-4f1a-aa22-af4e51025fbd.jpe" },
+      { title: "Beautiful Smile", date: "Vhia's Memory", image: "Vhia/7c35f35d-455f-4e49-bd2a-e176d102d710.jpe" },
+      { title: "Joyful Day", date: "Vhia's Memory", image: "Vhia/8c2a6520-2828-4302-a3eb-a0dfeb72fe2e.jpe" },
+      { title: "Lovely Portrait", date: "Vhia's Memory", image: "Vhia/8d095c02-d04c-406c-9d90-fe011e170262.jpe" },
+      { title: "Cherished Moment", date: "Vhia's Memory", image: "Vhia/c6a5090a-d3d2-4335-b2dd-b5c4ecd13143.jpe" },
+      { title: "Happy Time", date: "Vhia's Memory", image: "Vhia/c9444fd1-9148-4736-af73-636eaac85fe1.jpe" },
+      { title: "Candid Smile", date: "Vhia's Memory", image: "Vhia/e3ae7679-f883-4586-9ac2-0476182bf0b5.jpe" },
+      { title: "Warm Memories", date: "Vhia's Memory", image: "Vhia/e6c49f28-bb54-4ff4-85c9-79cc1a5b8869.jpe" }
+    ]
+  },
+  "jeffrey_agohar": {
+    id: "jeffrey_agohar",
+    name: "Jeffrey Agohar",
+    relationship: "Spouse",
+    roleGroup: "spouse",
+    generation: 2,
+    dates: "May 16, 1989",
+    birthPlace: "Bohol, Philippines",
+    occupation: "",
+    tagline: "",
+    bio: "Jeffrey is the loving husband of Olivia D. Dancel.",
+    image: "photos/jef.jpe",
+    spouse: "olivia",
+    parents: [],
+    children: ["nasya_amari"],
+    gallery: [
+      { title: "Sweet Moment", date: "Vhia's Memory", image: "Vhia/282193fd-32e1-4f1a-aa22-af4e51025fbd.jpe" },
+      { title: "Beautiful Smile", date: "Vhia's Memory", image: "Vhia/7c35f35d-455f-4e49-bd2a-e176d102d710.jpe" },
+      { title: "Joyful Day", date: "Vhia's Memory", image: "Vhia/8c2a6520-2828-4302-a3eb-a0dfeb72fe2e.jpe" },
+      { title: "Lovely Portrait", date: "Vhia's Memory", image: "Vhia/8d095c02-d04c-406c-9d90-fe011e170262.jpe" },
+      { title: "Cherished Moment", date: "Vhia's Memory", image: "Vhia/c6a5090a-d3d2-4335-b2dd-b5c4ecd13143.jpe" },
+      { title: "Happy Time", date: "Vhia's Memory", image: "Vhia/c9444fd1-9148-4736-af73-636eaac85fe1.jpe" },
+      { title: "Candid Smile", date: "Vhia's Memory", image: "Vhia/e3ae7679-f883-4586-9ac2-0476182bf0b5.jpe" },
+      { title: "Warm Memories", date: "Vhia's Memory", image: "Vhia/e6c49f28-bb54-4ff4-85c9-79cc1a5b8869.jpe" }
+    ]
+  },
+  "nasya_amari": {
+    id: "nasya_amari",
+    name: "Nasya Amari Agohar",
+    relationship: "Daughter",
+    roleGroup: "child",
+    generation: 3,
+    dates: "March 21, 2026",
+    birthPlace: "Batia, Bocaue, Bulacan",
+    occupation: "",
+    tagline: "",
+    bio: "Nasya Amari is the beloved daughter of Jeffrey and Olivia.",
+    image: "photos/nami.jpe",
+    spouse: null,
+    parents: ["olivia", "jeffrey_agohar"],
     children: [],
     gallery: [
-      { title: "Published Articles Collection", date: "2021", image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=600" },
-      { title: "Food Culture Documentary Feature", date: "2023", image: "https://images.unsplash.com/photo-1504674900612-b3a27d06cd87?q=80&w=600" }
+      { title: "Sweet Angel", date: "Baby Memory", image: "nasya/008ee834-4dbb-4979-963a-2d4debaa81cb.jpe" },
+      { title: "Precious Smile", date: "Baby Memory", image: "nasya/0ef8f241-a3f4-40a7-85fa-e82c10019c92.jpe" },
+      { title: "Little Wonder", date: "Baby Memory", image: "nasya/82c4afc8-4b4e-4d4d-a1e7-14abe721695f.jpe" },
+      { title: "Sweet Dreamer", date: "Baby Memory", image: "nasya/a6e85597-6cb2-4b7d-ab8a-9224fafdcfbc.jpe" },
+      { title: "Cute Moments", date: "Baby Memory", image: "nasya/b9284b5c-0c3d-4c26-995b-44fe799b06ee.jpe" },
+      { title: "Beloved Daughter", date: "Baby Memory", image: "nasya/e3ae7679-f883-4586-9ac2-0476182bf0b5 (1).jpe" },
+      { title: "Tiny Blessing", date: "Baby Memory", image: "nasya/edde8c7e-64d3-4102-9710-a077a38940b4.jpe" }
     ]
   },
   "troy_lits": {
@@ -458,7 +583,7 @@ const familyData = {
     children: [],
     gallery: [
       { title: "My 1x1 picture hehe", date: "2022", image: "photos/1x1ko.jpg" },
-      { title: "Coding Project Portfolio", date: "2024", image: "https://images.unsplash.com/photo-1517694712642-f529300b5a3f?q=80&w=600" }
+      { title: "Throwback", date: "2015", image: "photos/yort.jpe" }
     ]
   },
   "angelyn": {
@@ -504,9 +629,9 @@ const familyData = {
     relationship: "First Daughter",
     roleGroup: "child",
     generation: 3,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "Dec 1, 2013",
+    birthPlace: "Valenzuela, Philippines",
+    occupation: "Student",
     tagline: "",
     bio: "",
     image: null,
@@ -521,9 +646,9 @@ const familyData = {
     relationship: "Youngest Son",
     roleGroup: "child",
     generation: 3,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "Oct 11, 2018",
+    birthPlace: "Valenzuela, Philippines",
+    occupation: "Student",
     tagline: "",
     bio: "",
     image: null,
@@ -533,6 +658,34 @@ const familyData = {
     gallery: []
   }
 };
+// Helper function to calculate age dynamically based on birth date/year
+function calculateAge(datesStr) {
+  if (!datesStr) return null;
+  const cleanStr = datesStr.replace(/^(b\.|d\.|born|died)\s+/i, '').trim();
+  
+  // Try to parse as a full date
+  const birthDate = new Date(cleanStr);
+  if (!isNaN(birthDate.getTime())) {
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  }
+  
+  // Try to extract a 4-digit birth year
+  const match = cleanStr.match(/\b(19\d\d|20\d\d)\b/);
+  if (match) {
+    const birthYear = parseInt(match[1]);
+    const currentYear = new Date().getFullYear();
+    return currentYear - birthYear;
+  }
+  
+  return null;
+}
+
 // Common initial helper to construct a Monogram/Avatar Fallback
 function createAvatarHTML(member) {
   // Calculate initials for fallback
@@ -583,7 +736,10 @@ function initIndexPage() {
       
       if (frame) frame.innerHTML = createAvatarHTML(member);
       if (nameEl) nameEl.textContent = member.name;
-      if (datesEl) datesEl.textContent = member.dates;
+      if (datesEl) {
+        const age = calculateAge(member.dates);
+        datesEl.textContent = age !== null ? `${member.dates} (Age ${age})` : member.dates;
+      }
       if (relationEl) relationEl.textContent = member.relationship.split(' / ')[0];
       
       card.addEventListener('click', (e) => {
@@ -729,7 +885,10 @@ function initProfilePage() {
   if (heroFrame) heroFrame.innerHTML = createAvatarHTML(member);
   if (heroName) heroName.textContent = member.name;
   if (heroRole) heroRole.textContent = member.relationship;
-  if (heroLifespan) heroLifespan.textContent = member.dates;
+  if (heroLifespan) {
+    const age = calculateAge(member.dates);
+    heroLifespan.textContent = age !== null ? `${member.dates} (Age ${age})` : member.dates;
+  }
   if (heroBirthplace) heroBirthplace.textContent = member.birthPlace;
   if (heroOccupation) heroOccupation.textContent = member.occupation;
   
@@ -796,7 +955,8 @@ function initProfilePage() {
       member.parents.forEach(pId => {
         if (familyData[pId]) {
           const parentMember = familyData[pId];
-          const isFather = parentMember.relationship.includes("Father") || parentMember.id === "rolando";
+          const isFather = parentMember.relationship.includes("Father") || 
+                           ["rolando", "manuelito", "rommel", "brian_navarro", "bj_maularde", "jeffrey_agohar", "r_jay"].includes(parentMember.id);
           tempParents.push({
             member: parentMember,
             relationLabel: isFather ? "Father" : "Mother"
@@ -834,12 +994,225 @@ function initProfilePage() {
       });
     }
     
-    // Ordered: Spouse -> Children -> Parents (Mother first, then Father) -> Siblings
+    // Grandchildren relationship (children of children of Rolando and Juvilyn)
+    let grandchildren = [];
+    if (id === "rolando" || id === "juvilyn") {
+      if (member.children && member.children.length > 0) {
+        member.children.forEach(childId => {
+          const childMember = familyData[childId];
+          if (childMember && childMember.children && childMember.children.length > 0) {
+            childMember.children.forEach(grandchildId => {
+              const grandchildMember = familyData[grandchildId];
+              if (grandchildMember) {
+                const groupLower = grandchildMember.roleGroup ? grandchildMember.roleGroup.toLowerCase() : "";
+                const relLower = grandchildMember.relationship ? grandchildMember.relationship.toLowerCase() : "";
+                if (groupLower === "pet" || relLower.includes("dog")) {
+                  return; // Skip pets
+                }
+
+                let relationLabel = "Grandson";
+                if (relLower.includes("daughter")) {
+                  relationLabel = "Granddaughter";
+                } else if (relLower.includes("son")) {
+                  relationLabel = "Grandson";
+                }
+                
+                if (!grandchildren.some(g => g.member.id === grandchildId)) {
+                  grandchildren.push({
+                    member: grandchildMember,
+                    relationLabel: relationLabel
+                  });
+                }
+              }
+            });
+          }
+        });
+      }
+      
+      // Sort grandchildren from eldest to youngest (by precise birthdate)
+      grandchildren.sort((a, b) => {
+        const dateA = a.member.dates ? Date.parse(a.member.dates.replace(/^(b\.|d\.|born|died)\s+/i, '').trim()) : NaN;
+        const dateB = b.member.dates ? Date.parse(b.member.dates.replace(/^(b\.|d\.|born|died)\s+/i, '').trim()) : NaN;
+        
+        const hasA = !isNaN(dateA);
+        const hasB = !isNaN(dateB);
+        
+        if (hasA && hasB) {
+          return dateA - dateB; // Earlier birthdate timestamp means older, so sort ascending
+        }
+        if (hasA) return -1; // Place members with dates first
+        if (hasB) return 1;
+        return 0;
+      });
+    }
+
+    // Nieces and Nephews relationship (children of siblings, excluding own children and pets)
+    let niecesNephews = [];
+    const isSiblingOfThisGeneration = member.parents && member.parents.some(p => p === "rolando" || p === "juvilyn");
+    if (isSiblingOfThisGeneration) {
+      member.parents.forEach(pId => {
+        if (familyData[pId]) {
+          familyData[pId].children.forEach(sibId => {
+            if (sibId !== member.id && familyData[sibId]) {
+              const siblingMember = familyData[sibId];
+              if (siblingMember.children && siblingMember.children.length > 0) {
+                siblingMember.children.forEach(childId => {
+                  const childMember = familyData[childId];
+                  if (childMember) {
+                    const groupLower = childMember.roleGroup ? childMember.roleGroup.toLowerCase() : "";
+                    const relLower = childMember.relationship ? childMember.relationship.toLowerCase() : "";
+                    if (groupLower === "pet" || relLower.includes("dog")) {
+                      return;
+                    }
+                    if (member.children && member.children.includes(childId)) {
+                      return;
+                    }
+                    
+                    let relationLabel = "Nephew";
+                    if (relLower.includes("daughter")) {
+                      relationLabel = "Niece";
+                    } else if (relLower.includes("son")) {
+                      relationLabel = "Nephew";
+                    }
+                    
+                    if (!niecesNephews.some(n => n.member.id === childId)) {
+                      niecesNephews.push({
+                        member: childMember,
+                        relationLabel: relationLabel
+                      });
+                    }
+                  }
+                });
+              }
+            }
+          });
+        }
+      });
+
+      // Sort nieces and nephews from eldest to youngest (by precise birthdate)
+      niecesNephews.sort((a, b) => {
+        const dateA = a.member.dates ? Date.parse(a.member.dates.replace(/^(b\.|d\.|born|died)\s+/i, '').trim()) : NaN;
+        const dateB = b.member.dates ? Date.parse(b.member.dates.replace(/^(b\.|d\.|born|died)\s+/i, '').trim()) : NaN;
+        
+        const hasA = !isNaN(dateA);
+        const hasB = !isNaN(dateB);
+        
+        if (hasA && hasB) {
+          return dateA - dateB;
+        }
+        if (hasA) return -1;
+        if (hasB) return 1;
+        return 0;
+      });
+    }
+
+    // Aunts/Uncles and Cousins relationship (for grandchildren generation)
+    let auntsUncles = [];
+    let cousins = [];
+    const isGrandchild = member.generation === 3;
+    if (isGrandchild) {
+      let bloodParents = [];
+      member.parents.forEach(pId => {
+        const pMember = familyData[pId];
+        if (pMember && pMember.parents && pMember.parents.some(gp => gp === "rolando" || gp === "juvilyn")) {
+          bloodParents.push(pId);
+        }
+      });
+      
+      if (bloodParents.length === 0) {
+        bloodParents = member.parents;
+      }
+      
+      const auntsUnclesSet = new Set();
+      const cousinsSet = new Set();
+      
+      bloodParents.forEach(pId => {
+        const parentMember = familyData[pId];
+        if (parentMember && parentMember.parents && parentMember.parents.length > 0) {
+          parentMember.parents.forEach(gpId => {
+            if (familyData[gpId]) {
+              familyData[gpId].children.forEach(sibId => {
+                if (sibId !== pId && familyData[sibId]) {
+                  const siblingMember = familyData[sibId];
+                  
+                  if (!auntsUnclesSet.has(sibId)) {
+                    auntsUnclesSet.add(sibId);
+                    const isAunt = siblingMember.relationship.toLowerCase().includes("daughter") || 
+                                    siblingMember.relationship.toLowerCase().includes("sister");
+                    auntsUncles.push({
+                      member: siblingMember,
+                      relationLabel: isAunt ? "Aunt" : "Uncle"
+                    });
+                  }
+                  
+                  if (siblingMember.spouse && familyData[siblingMember.spouse]) {
+                    const spouseId = siblingMember.spouse;
+                    if (!auntsUnclesSet.has(spouseId)) {
+                      auntsUnclesSet.add(spouseId);
+                      const spouseMember = familyData[spouseId];
+                      const isAunt = siblingMember.relationship.toLowerCase().includes("son") || 
+                                      siblingMember.relationship.toLowerCase().includes("brother");
+                      auntsUncles.push({
+                        member: spouseMember,
+                        relationLabel: isAunt ? "Aunt" : "Uncle"
+                      });
+                    }
+                  }
+                  
+                  if (siblingMember.children && siblingMember.children.length > 0) {
+                    siblingMember.children.forEach(cId => {
+                      if (familyData[cId]) {
+                        const cousinMember = familyData[cId];
+                        const groupLower = cousinMember.roleGroup ? cousinMember.roleGroup.toLowerCase() : "";
+                        const relLower = cousinMember.relationship ? cousinMember.relationship.toLowerCase() : "";
+                        
+                        if (groupLower === "pet" || relLower.includes("dog")) return;
+                        if (cId === member.id) return;
+                        if (member.parents.some(parent => cousinMember.parents.includes(parent))) return;
+                        
+                        if (!cousinsSet.has(cId)) {
+                          cousinsSet.add(cId);
+                          cousins.push({
+                            member: cousinMember,
+                            relationLabel: "Cousin"
+                          });
+                        }
+                      }
+                    });
+                  }
+                }
+              });
+            }
+          });
+        }
+      });
+
+      cousins.sort((a, b) => {
+        const dateA = a.member.dates ? Date.parse(a.member.dates.replace(/^(b\.|d\.|born|died)\s+/i, '').trim()) : NaN;
+        const dateB = b.member.dates ? Date.parse(b.member.dates.replace(/^(b\.|d\.|born|died)\s+/i, '').trim()) : NaN;
+        
+        const hasA = !isNaN(dateA);
+        const hasB = !isNaN(dateB);
+        
+        if (hasA && hasB) {
+          return dateA - dateB;
+        }
+        if (hasA) return -1;
+        if (hasB) return 1;
+        return 0;
+      });
+    }
+
+    // Ordered: Spouse -> Children -> Parents (Mother first, then Father) -> Siblings -> Grandchildren -> Nieces/Nephews -> Aunts/Uncles -> Cousins
     let relationalMembers = [
       ...spouses,
       ...children,
       ...parents,
-      ...siblings
+      ...siblings,
+      ...grandchildren,
+      ...niecesNephews,
+      ...auntsUncles,
+      ...cousins
     ];
     
     if (relationalMembers.length === 0) {
@@ -851,12 +1224,14 @@ function initProfilePage() {
         card.href = `profile.html?id=${m.id}`;
         card.className = 'family-unit-card';
         
+        const age = calculateAge(m.dates);
+        const relationText = age !== null ? `${entry.relationLabel} (Age ${age})` : entry.relationLabel;
         card.innerHTML = `
           <div class="cameo-frame">
             ${createAvatarHTML(m)}
           </div>
           <div class="member-name">${m.name}</div>
-          <div class="member-relation">${entry.relationLabel}</div>
+          <div class="member-relation">${relationText}</div>
         `;
         
         // Dynamic click transitions

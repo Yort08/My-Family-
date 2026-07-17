@@ -76,8 +76,19 @@ const familyData = {
     parents: ["rolando", "juvilyn"],
     children: ["alexandra", "altheo"],
     gallery: [
-      { title: "Bike Maintenance Workshop", date: "2019", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=600" },
-      { title: "Family Tech Setup Project", date: "2021", image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600" }
+      { title: "Sweet Moment", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/31562402_2085735124773156_7617457801803071488_n.jpg" },
+      { title: "Beautiful Smile", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/43522890_2316406191706047_7596374301268246528_n.jpg" },
+      { title: "Joyful Gathering", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/43538276_2316597608353572_4639490511420260352_n.jpg" },
+      { title: "Happy Time", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/467306674_9453534531326475_240617842625270639_n.jpg" },
+      { title: "Lovely Portrait", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/467307574_9447529298593665_2493673521119225490_n.jpg" },
+      { title: "Candid Shot", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/467335770_9450894254923836_1955047487087608836_n.jpg" },
+      { title: "Cherished Moment", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/471149758_9660850577261535_6579316820863272319_n.jpg" },
+      { title: "Sweet Memories", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/48426473_2430398416973490_4566168405995945984_n.jpg" },
+      { title: "Joyful Day", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/57597603_2616880898325240_1413892887266983936_n.jpg" },
+      { title: "Lovely Gathering", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/58381098_2616894621657201_7044199789432406016_n.jpg" },
+      { title: "Family Photo", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/Screenshot 2026-07-17 223322.png" },
+      { title: "Cherished Moment", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/507160936_24133002649636960_1156913212155968834_n.jpg" },
+      { title: "Warm Gathering", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/516486757_24297285526542004_3234688603875886038_n.jpg" }
     ]
   },
   "mary_jane": {
@@ -88,7 +99,7 @@ const familyData = {
     generation: 2,
     dates: "Dec 4, 1985",
     birthPlace: "Victorina Lolomboy, Bulacan, Philippines",
-    occupation: "Head Pediatric Nurse",
+    occupation: "Home Business Owner",
     tagline: "Care is about treating the person, not just the symptom.",
     bio: "Mary Jane leads pediatric care and supports family health initiatives.",
     image: "jane/jane.jpe",
@@ -130,7 +141,7 @@ const familyData = {
     generation: 3,
     dates: "Dec 3, 2025",
     birthPlace: "PNP, Batia, Bocaue, Bulacan, Philippines",
-    occupation: "Family Companion",
+    occupation: "Family Dog",
     tagline: "A beloved furry member of the Dancel-Bajaro family.",
     bio: "Loloy is the cherished family dog who brings joy and companionship to Mary Jane and Rommel's home.",
     image: "jane/loy.jpe",
@@ -151,9 +162,9 @@ const familyData = {
     generation: 2,
     dates: "March 9, 1988",
     birthPlace: "Lolomboy, Bulacan, Philippines",
-    occupation: "Operations Manager",
+    occupation: "Tailor",
     tagline: "Efficiency is doing things right; effectiveness is doing the right things.",
-    bio: "Mary Joy manages logistics for an international retail brand.",
+    bio: "Mary Joy loves creating beautiful garments and connecting with her family.",
     image: "photos/Mary Joy.jpe",
     spouse: "brian_navarro",
     parents: ["rolando", "juvilyn"],
@@ -169,9 +180,9 @@ const familyData = {
     relationship: "Spouse",
     roleGroup: "spouse",
     generation: 2,
-    dates: "",
-    birthPlace: "",
-    occupation: "",
+    dates: "Aug 22, 1991",
+    birthPlace: "Pandi, Bulacan, Philippines",
+    occupation: "Rooof Contractor",
     tagline: "",
     bio: "Brian is the loving husband of Mary Joy Dancel.",
     image: null,
@@ -182,7 +193,7 @@ const familyData = {
   },
   "jhian_d_navarro": {
     id: "jhian_d_navarro",
-    name: "Jhian D. Navarro",
+    name: "Jian D. Navarro",
     relationship: "Son",
     roleGroup: "child",
     generation: 3,
@@ -199,7 +210,7 @@ const familyData = {
   },
   "josh_d_navarro": {
     id: "josh_d_navarro",
-    name: "Josh D. Navarro",
+    name: "Brian Josh D. Navarro",
     relationship: "Son",
     roleGroup: "child",
     generation: 3,
@@ -233,7 +244,7 @@ const familyData = {
   },
   "brianna_d_navarro": {
     id: "brianna_d_navarro",
-    name: "Brianna D. Navarro",
+    name: "Brianna Joy D. Navarro",
     relationship: "Daughter",
     roleGroup: "child",
     generation: 3,
@@ -256,9 +267,9 @@ const familyData = {
     generation: 2,
     dates: "Dec 10, 1990",
     birthPlace: "Banlok Lolomboy, Bulacan, Philippines",
-    occupation: "Certified Public Accountant",
+    occupation: "Tailor",
     tagline: "Numbers speak truth if you listen with precision.",
-    bio: "Mary Grace works in finance and helps manage family finances for reunions.",
+    bio: "Mary Grace works in tailoring shops and is a dedicated mother to her son, John Marvin Dancel.",
     image: "photos/gracia.jpe",
     spouse: "bj_maularde",
     parents: ["rolando", "juvilyn"],
@@ -388,8 +399,8 @@ const familyData = {
     generation: 2,
     dates: "July 18, 1994",
     birthPlace: "Banlok Lolomboy, Bulacan, Philippines",
-    occupation: "Clinical Pharmacist",
-    tagline: "Science combined with care yields the best remedies.",
+    occupation: "Fireworks",
+    tagline: "Making a light in the darkness, one spark at a time.",
     bio: "Cherry Anne works in clinical research evaluating drug interactions.",
     image: "photos/che.jpe",
     spouse: null,
@@ -428,7 +439,7 @@ const familyData = {
     occupation: "Student",
     tagline: "",
     bio: "",
-    image: null,
+    image: "photos/adoy.jpe",
     spouse: null,
     parents: ["cherry_anne"],
     children: [],
@@ -436,7 +447,7 @@ const familyData = {
   },
   "levy_ace_d_lobendino": {
     id: "levy_ace_d_lobendino",
-    name: "Levy Ace D. Lobendino",
+    name: "Levi Ace D. Lobendino",
     relationship: "Son",
     roleGroup: "child",
     generation: 3,
@@ -445,7 +456,7 @@ const familyData = {
     occupation: "Student",
     tagline: "",
     bio: "",
-    image: null,
+    image: "photos/levi.jpe",
     spouse: null,
     parents: ["cherry_anne"],
     children: [],
@@ -459,9 +470,9 @@ const familyData = {
     generation: 2,
     dates: "July 6, 1997",
     birthPlace: "Abangan Sur Marilao, Bulacan, Philippines",
-    occupation: "Civil Engineer",
-    tagline: "We build structures that stand the test of time and weather.",
-    bio: "Rolando Jr. is a civil engineer working on infrastructure projects.",
+    occupation: "Bike Technician",
+    tagline: "We build bicycles that roll with style.",
+    bio: "Rolando Jr. is a bicycle technician who loves to ride and maintain bikes.",
     image: "photos/RolandoJR.jpe",
     spouse: "marian_solijon",
     parents: ["rolando", "juvilyn"],
@@ -523,7 +534,7 @@ const familyData = {
     generation: 2,
     dates: "May 16, 1989",
     birthPlace: "Bohol, Philippines",
-    occupation: "",
+    occupation: "Gas Station Attendant",
     tagline: "",
     bio: "Jeffrey is the loving husband of Olivia D. Dancel.",
     image: "photos/jef.jpe",
@@ -614,14 +625,28 @@ const familyData = {
     generation: 2,
     dates: "",
     birthPlace: "",
-    occupation: "",
+    occupation: "House Wife",
     tagline: "",
     bio: "",
-    image: null,
+    image: "photos/jonna.jpg",
     spouse: "manuelito",
     parents: [],
     children: ["alexandra", "altheo"],
-    gallery: []
+    gallery: [
+      { title: "Sweet Moment", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/31562402_2085735124773156_7617457801803071488_n.jpg" },
+      { title: "Beautiful Smile", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/43522890_2316406191706047_7596374301268246528_n.jpg" },
+      { title: "Joyful Gathering", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/43538276_2316597608353572_4639490511420260352_n.jpg" },
+      { title: "Happy Time", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/467306674_9453534531326475_240617842625270639_n.jpg" },
+      { title: "Lovely Portrait", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/467307574_9447529298593665_2493673521119225490_n.jpg" },
+      { title: "Candid Shot", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/467335770_9450894254923836_1955047487087608836_n.jpg" },
+      { title: "Cherished Moment", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/471149758_9660850577261535_6579316820863272319_n.jpg" },
+      { title: "Sweet Memories", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/48426473_2430398416973490_4566168405995945984_n.jpg" },
+      { title: "Joyful Day", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/57597603_2616880898325240_1413892887266983936_n.jpg" },
+      { title: "Lovely Gathering", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/58381098_2616894621657201_7044199789432406016_n.jpg" },
+      { title: "Family Photo", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/Screenshot 2026-07-17 223322.png" },
+      { title: "Cherished Moment", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/507160936_24133002649636960_1156913212155968834_n.jpg" },
+      { title: "Warm Gathering", date: "Manuelito & Jonna's Memory", image: "Manuelito_Jonna/516486757_24297285526542004_3234688603875886038_n.jpg" }
+    ]
   },
   "alexandra": {
     id: "alexandra",
@@ -634,7 +659,7 @@ const familyData = {
     occupation: "Student",
     tagline: "",
     bio: "",
-    image: null,
+    image: "photos/alex.jpg",
     spouse: null,
     parents: ["manuelito", "jonna"],
     children: [],
@@ -651,7 +676,7 @@ const familyData = {
     occupation: "Student",
     tagline: "",
     bio: "",
-    image: null,
+    image: "photos/Theo.jpg",
     spouse: null,
     parents: ["manuelito", "jonna"],
     children: [],
@@ -851,6 +876,17 @@ function initIndexPage() {
       suggestionPopup.style.display = 'none';
     }
   });
+
+  // Auto-focus search input if requested via URL params
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('focus') === 'search') {
+    setTimeout(() => {
+      if (searchInput) {
+        searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        searchInput.focus();
+      }
+    }, 300);
+  }
 }
 // ==========================================================================
 // PROFILE PAGE: Dynamic rendering & Family relations logic
@@ -1141,7 +1177,8 @@ function initProfilePage() {
                                     siblingMember.relationship.toLowerCase().includes("sister");
                     auntsUncles.push({
                       member: siblingMember,
-                      relationLabel: isAunt ? "Aunt" : "Uncle"
+                      relationLabel: isAunt ? "Aunt" : "Uncle",
+                      isSpouse: false
                     });
                   }
                   
@@ -1150,11 +1187,31 @@ function initProfilePage() {
                     if (!auntsUnclesSet.has(spouseId)) {
                       auntsUnclesSet.add(spouseId);
                       const spouseMember = familyData[spouseId];
-                      const isAunt = siblingMember.relationship.toLowerCase().includes("son") || 
-                                      siblingMember.relationship.toLowerCase().includes("brother");
+                      
+                      const isSpouseOfAunt = siblingMember.relationship.toLowerCase().includes("daughter") || 
+                                             siblingMember.relationship.toLowerCase().includes("sister") ||
+                                             siblingMember.relationship.toLowerCase().includes("youngest daughter") ||
+                                             siblingMember.relationship.toLowerCase().includes("fourth daughter") ||
+                                             siblingMember.relationship.toLowerCase().includes("fifth daughter") ||
+                                             siblingMember.relationship.toLowerCase().includes("third daughter") ||
+                                             siblingMember.relationship.toLowerCase().includes("second daughter") ||
+                                             siblingMember.relationship.toLowerCase().includes("eldest daughter");
+                      
+                      const getShortName = (fullName) => {
+                        if (!fullName) return '';
+                        const parts = fullName.split(' ');
+                        if (parts[0] === 'Mary' && parts[1]) {
+                          return parts[0] + ' ' + parts[1];
+                        }
+                        return parts[0];
+                      };
+                      const shortName = siblingMember.name.includes("Olivia") ? "Vhia" : getShortName(siblingMember.name);
+                      const label = isSpouseOfAunt ? `Uncle by Aunt ${shortName}` : `Aunt by Uncle ${shortName}`;
+                      
                       auntsUncles.push({
                         member: spouseMember,
-                        relationLabel: isAunt ? "Aunt" : "Uncle"
+                        relationLabel: label,
+                        isSpouse: true
                       });
                     }
                   }
@@ -1199,6 +1256,14 @@ function initProfilePage() {
         }
         if (hasA) return -1;
         if (hasB) return 1;
+        return 0;
+      });
+
+      // Sort aunts/uncles: blood relatives first, spouses last
+      auntsUncles.sort((a, b) => {
+        if (a.isSpouse !== b.isSpouse) {
+          return a.isSpouse ? 1 : -1;
+        }
         return 0;
       });
     }
@@ -1407,6 +1472,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initIndexGallery();
   } else if (document.getElementById('profile-layout') || document.getElementById('error-container')) {
     initProfilePage();
+  } else if (document.getElementById('genealogy-layout')) {
+    initGenealogyPage();
   }
   
   // Initialize theme toggle
@@ -1420,7 +1487,13 @@ const familyGalleryData = [
   { title: "Big Family Portrait", date: "Special Celebration", image: "mama/c2aca60b-66a5-45c7-91f0-75512aeba728.jpe" },
   { title: "Joyful Moments Together", date: "Home Gathering", image: "mama/736dbf58-49fe-4ffb-8883-6bb0538bd37c.jpe" },
   { title: "Sweet Grandchild Moments", date: "Loving Family", image: "papa_photos/29378b7f-d7df-4661-9491-7f6a7068a352.jpe" },
-  { title: "Papa's Signature Pose", date: "Restaurant Dinner", image: "papa_photos/b538d9f2-4a98-4fa0-bd9f-24ff9fe8bd5c.jpe" }
+  { title: "Papa's Signature Pose", date: "Restaurant Dinner", image: "papa_photos/b538d9f2-4a98-4fa0-bd9f-24ff9fe8bd5c.jpe" },
+  { title: "Family Memory", date: "Dancel Archive", image: "DancelPhotos/45de1dbb-05cd-48fc-bdff-907860bd703f.jpe" },
+  { title: "Joyful Gathering", date: "Dancel Archive", image: "DancelPhotos/91fc2bd9-ec7d-4067-9742-9121a29489cc.jpe" },
+  { title: "Cherished Moment", date: "Dancel Archive", image: "DancelPhotos/97a6a302-2764-4da8-acba-4aeee3666d63.jpe" },
+  { title: "Happy Times", date: "Dancel Archive", image: "DancelPhotos/f091fb0e-9819-44bc-abae-dccf543649b8.jpe" },
+  { title: "Sweet Portrait", date: "Dancel Archive", image: "DancelPhotos/fe8c744b-f582-4a39-878c-3b73f71f2b56.jpe" },
+  { title: "Family Celebration", date: "Dancel Archive", image: "DancelPhotos/499281368_23914610338142860_8596101370137219419_n.jpg" }
 ];
 
 function initIndexGallery() {
@@ -1469,4 +1542,162 @@ function setTheme(theme) {
   } else {
     document.documentElement.removeAttribute('data-theme');
   }
+}
+
+// ==========================================================================
+// GENEALOGY PAGE: Text Table & Search Logic
+// ==========================================================================
+function initGenealogyPage() {
+  const tableBody = document.getElementById('genealogy-table-body');
+  const searchInput = document.getElementById('genealogy-search-input');
+  const genFilter = document.getElementById('genealogy-generation-filter');
+  
+  if (!tableBody) return;
+  
+  function renderTable() {
+    const query = searchInput.value.toLowerCase().trim();
+    const activeGen = genFilter.value;
+    
+    // Sort all family members: Generation 1 first, then Generation 2, then Generation 3
+    const sortedMembers = Object.values(familyData).sort((a, b) => {
+      // 1. Sort by generation (1st, 2nd, 3rd)
+      if (a.generation !== b.generation) {
+        return a.generation - b.generation;
+      }
+      
+      // 2. Group by role weight (direct family first, spouses second, pets last)
+      const getRoleWeight = (m) => {
+        if (m.roleGroup === "spouse") return 1;
+        if (m.roleGroup === "pet" || m.id === "loloy") return 2;
+        return 0; // Direct family
+      };
+      
+      const weightA = getRoleWeight(a);
+      const weightB = getRoleWeight(b);
+      if (weightA !== weightB) {
+        return weightA - weightB;
+      }
+      
+      // 3. Chronological sort (eldest first)
+      const dateA = a.dates ? Date.parse(a.dates.replace(/^(b\.|d\.|born|died)\s+/i, '').trim()) : NaN;
+      const dateB = b.dates ? Date.parse(b.dates.replace(/^(b\.|d\.|born|died)\s+/i, '').trim()) : NaN;
+      const hasA = !isNaN(dateA);
+      const hasB = !isNaN(dateB);
+      
+      if (hasA && hasB) return dateA - dateB;
+      if (hasA) return -1;
+      if (hasB) return 1;
+      return a.name.localeCompare(b.name);
+    });
+    
+    tableBody.innerHTML = '';
+    
+    sortedMembers.forEach(m => {
+      const matchQuery = m.name.toLowerCase().includes(query) || 
+                         m.relationship.toLowerCase().includes(query) ||
+                         m.occupation.toLowerCase().includes(query) ||
+                         m.birthPlace.toLowerCase().includes(query) ||
+                         m.dates.includes(query);
+                         
+      const matchGen = activeGen === 'all' || m.generation.toString() === activeGen;
+      
+      if (!matchQuery || !matchGen) return;
+      
+      const tr = document.createElement('tr');
+      tr.addEventListener('click', () => {
+        window.location.href = `profile.html?id=${m.id}`;
+      });
+      
+      const avatarHTML = m.image ? 
+        `<img src="${m.image}" class="member-avatar-mini" alt="${m.name}">` : 
+        `<div class="member-avatar-fallback avatar-fallback fallback-${m.roleGroup}" style="display:flex;align-items:center;justify-content:center;font-size:0.9rem;font-weight:700;color:#fff">${m.name.split(' ')[0][0]}</div>`;
+      
+      const age = calculateAge(m.dates);
+      const ageText = age !== null ? `${m.dates} (Age ${age})` : (m.dates || '—');
+      
+      // Build detailed relationship text
+      let detailedRelation = m.relationship;
+      if (m.roleGroup === "spouse" && m.spouse && familyData[m.spouse]) {
+        detailedRelation = `Spouse of ${familyData[m.spouse].name}`;
+      } else if (m.parents && m.parents.length > 0) {
+        const getShortName = (fullName) => {
+          if (!fullName) return '';
+          const parts = fullName.split(' ');
+          if (parts[0] === 'Mary' && parts[1]) {
+            return parts[0] + ' ' + parts[1];
+          }
+          return parts[0];
+        };
+        const parentNames = m.parents
+          .map(pId => familyData[pId] ? getShortName(familyData[pId].name) : '')
+          .filter(Boolean);
+        
+        // Dynamically compute birth order relationship for general "Son" / "Daughter" labels
+        let relationLabel = m.relationship;
+        if (relationLabel === "Son" || relationLabel === "Daughter") {
+          const isSon = relationLabel === "Son";
+          const targetGenderClass = isSon ? ["son", "eldest son", "second son", "third son", "fourth son", "youngest son"] 
+                                          : ["daughter", "first daughter", "second daughter", "third daughter", "fourth daughter", "youngest daughter", "fifth daughter"];
+          
+          const siblings = Object.values(familyData).filter(c => 
+            c.parents && c.parents.some(p => m.parents.includes(p))
+          );
+          
+          const sameGenderSiblings = siblings.filter(c => {
+            const relLower = c.relationship ? c.relationship.toLowerCase() : "";
+            return targetGenderClass.some(cls => relLower.includes(cls));
+          });
+          
+          sameGenderSiblings.sort((a, b) => {
+            const dateA = a.dates ? Date.parse(a.dates.replace(/^(b\.|d\.|born|died)\s+/i, '').trim()) : NaN;
+            const dateB = b.dates ? Date.parse(b.dates.replace(/^(b\.|d\.|born|died)\s+/i, '').trim()) : NaN;
+            const hasA = !isNaN(dateA);
+            const hasB = !isNaN(dateB);
+            
+            if (hasA && hasB) return dateA - dateB;
+            if (hasA) return -1;
+            if (hasB) return 1;
+            return a.name.localeCompare(b.name);
+          });
+          
+          const index = sameGenderSiblings.findIndex(c => c.id === m.id);
+          const total = sameGenderSiblings.length;
+          
+          if (total === 1) {
+            relationLabel = isSon ? "Only Son" : "Only Daughter";
+          } else if (index === total - 1) {
+            relationLabel = isSon ? "Youngest Son" : "Youngest Daughter";
+          } else {
+            const ordinals = ["First", "Second", "Third", "Fourth", "Fifth", "Sixth"];
+            const prefix = ordinals[index] || (index + 1) + "th";
+            relationLabel = `${prefix} ${isSon ? "Son" : "Daughter"}`;
+          }
+        }
+
+        if (parentNames.length > 0) {
+          detailedRelation = `${relationLabel} of ${parentNames.join(' & ')}`;
+        }
+      }
+      
+      tr.innerHTML = `
+        <td>
+          <div class="member-info-cell">
+            ${avatarHTML}
+            <span style="font-weight: 600;">${m.name}</span>
+          </div>
+        </td>
+        <td><span class="relation-badge badge-${m.roleGroup}">${detailedRelation}</span></td>
+        <td>${ageText}</td>
+        <td>${m.birthPlace || '—'}</td>
+        <td>${m.occupation || '—'}</td>
+      `;
+      
+      tableBody.appendChild(tr);
+    });
+  }
+  
+  if (searchInput) searchInput.addEventListener('input', renderTable);
+  if (genFilter) genFilter.addEventListener('change', renderTable);
+  
+  renderTable();
 }

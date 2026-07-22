@@ -439,7 +439,7 @@ const familyData = {
     occupation: "Student",
     tagline: "",
     bio: "",
-    image: null,
+    image: "photos/lhi.jpe",
     spouse: null,
     parents: ["cherry_anne"],
     children: [],

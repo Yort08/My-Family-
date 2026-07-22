@@ -202,7 +202,7 @@ const familyData = {
     occupation: "Student",
     tagline: "",
     bio: "",
-    image: null,
+    image: "photos/yan.jpe",
     spouse: null,
     parents: ["mary_joy", "brian_navarro"],
     children: [],

@@ -306,10 +306,10 @@ p.subtitle {
   width: 100%;
   overflow-x: auto;
   padding: 2rem 1rem 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  display: block;
+  text-align: center;
   min-height: 600px;
+  -webkit-overflow-scrolling: touch;
 }
 .tree {
   white-space: nowrap;
@@ -865,71 +865,29 @@ footer svg {
     padding: 0.85rem 1rem;
   }
   .tree-outer-container {
-    padding: 1rem 0.5rem 3rem;
-  }
-  /* Tree layout responsive adjustment: Switch connection borders for mobile linear vertical tree view */
-  .tree {
-    width: 100%;
-  }
-  .tree ul {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-  }
-  .tree li {
-    padding: 20px 0 0 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Reset horizontal lines for vertical hierarchy */
-  .tree li::before, .tree li::after {
-    border: none;
-  }
-  .tree li:last-child::before {
-    border: none;
-  }
-  
-  /* Vertical linking line */
-  .tree li::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    border-left: 2px solid var(--color-border);
-    width: 0;
-    height: 20px;
-    transform: translateX(-50%);
-  }
-  .tree ul ul::before {
-    height: 20px;
-  }
-  
-  /* Stack spouse cards vertically or make small */
-  .couple-wrapper {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  
-  .couple-wrapper::after {
-    width: 2px;
-    height: calc(100% - 100px);
-    top: 50px;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
+    padding: 1rem 0.5rem 4rem;
   }
   
   .member-card {
-    width: 165px;
-    padding: 1.25rem 1rem 1rem;
+    width: 140px;
+    padding: 1rem 0.75rem 0.75rem;
   }
   
   .cameo-frame {
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
+  }
+  
+  .member-name {
+    font-size: 0.85rem;
+  }
+  
+  .member-dates {
+    font-size: 0.7rem;
+  }
+  
+  .member-relation {
+    font-size: 0.65rem;
   }
 }
 /* Fade-in animations */
@@ -1117,4 +1075,29 @@ footer svg {
     top: -30px;
     height: 30px;
   }
+}
+
+/* Scroll hint styling */
+.scroll-hint {
+  display: none;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-accent-gold);
+  margin-top: -1.25rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .scroll-hint {
+    display: block;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
 }

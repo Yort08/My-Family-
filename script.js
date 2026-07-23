@@ -3,7 +3,7 @@ const familyData = {
   "rolando": {
     id: "rolando",
     name: "Rolando D. Dancel",
-    relationship: "Patriarch",
+    relationship: "Father",
     roleGroup: "parent",
     generation: 1,
     dates: "Nov 17, 1962",
@@ -26,7 +26,7 @@ const familyData = {
   "juvilyn": {
     id: "juvilyn",
     name: "Juvilyn D. Dancel",
-    relationship: "Matriarch",
+    relationship: "Mother",
     roleGroup: "parent",
     generation: 1,
     dates: "Dec 25, 1966",
